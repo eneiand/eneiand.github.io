@@ -5,15 +5,15 @@ title: Effective Javascript, Know which Javascript you're using
 
 ES5 introduced _strict mode_. Enabling this feature allows you to opt in to a restricted version of Javascript that disallows some of the more problematic or error-prone features of the full language.
 Strict mode is enabled by addin a special string constant at the beginning of the program:
-```
+{% highlight js %} 
   "use strict";
-```
+{% endhighlight %}
 Enable strict mode in a function by placing the directive at the beginning of the function body:
-```
+{% highlight js %} 
   function f(x) {
     "use strict";
   }
-```
+{% endhighlight %}
 The syntax of "use strict" means it will be safely ignored by older engines.
 "use strict" must be at the top of the file so watch out for file concatenation. All or nothing is best.
 
