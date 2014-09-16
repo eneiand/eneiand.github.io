@@ -22,3 +22,20 @@
   * creating a changeset involves picking the metadata types to include
   * uploading a changeset does not immediately deploy it, need to go to production, inbound changesets -> deploy
   * test coverage requirement is only required when deploying to production
+  * you can overwrite changes made in production with deployments from sandbox
+  * no change management release process out of the box
+  * you need to have a process
+    * a well documented project plan
+    * strict user governance, restrict admin capabilities in production to a small group that also mange the release
+  * permission sets allow us to control what a type of user can do
+  * deploy permission sets and related metadata objects at the same time
+  * not all metadata components can be added to changesets (the metadata api does not support them all)
+    * do a manual deployment, recreate it yourself in production
+  * a large set of sandboxes are updated to preview releases of Salesforce early in the "Preview Window"
+  * always refresh your sandbox after your release
+  * create a post refresh run-list
+    * data masking needs
+    * user/profile mods
+    * test data loads
+    * turn off scheduled jobs
+    * manage outbound email
