@@ -78,18 +78,68 @@
 ## Color - Models and Meanings
 
 * The Science of Light and Color
+  * electromagnetic spectrum, long to short wavelength radiation, Visible light contains what we can see
+  * human sight is eye and brain working together, electromagnetic radiation enters the eye
+  * brain receives information and perceives the colors
+  * color is our perception of electromagnetic radiation
+  * subtractive color, start with white light then subtract colors from it to give final color we see
+  * additive color, starts with black and adds different wavelengths of light to it to create colors
 * Color models: RGB and CMYK
+  * ways of representing colors based on values
+  * RGB we assign values to Red, Green and Blue. (255 0 0 -> brightest red) (255 255 0 -> yellow)
+  * Cyan, Magenta, Yellow, Black 
 * Color and Meaning: Red
+  * highly sensual, strawberries, red wine, lipstick
+  * danger, blood, aggressive, tempting
+  * attracts attention
+  * use of red needs care and attention, overuse can be demanding on viewer
+  * passionate, hot, strong, dangerous
 * Color and Meaning: Green
+  * color of nature
+  * vegetables, hills
+  * relaxing and calming
+  * harmonious, agreeable
 * Color and Meaning: Blue
+  * quiet coolness
+  * stillness, tranquility
+  * introspection, sometimes sadness
+  * constancy, loyalty and dependability -> often used for logos
+  * spacious peaceful, cool, open, faithful
 * Color and Meaning: Orange
+  * enthusiasm and energy
+  * fiery sunset
+  * hot color, food
+  * sharp mental activity
+  * dynamic, stimulating, juicy, happy, playful
 * Color and Meaning: Purple
+  * healing, amethyst
+  * rare in nature
+  * spiritual, cerebral, mysterious, meditative
 * Color and Meaning: Yellow
+  * the color of light
+  * sunflowers
+  * friendly and enlightening
+  * energetic, extroverted, youthful
 * Coloe and Meaning: Brown
+  * wholesome and rustic
+  * working the land, nature
+  * arouse appetite.
+  * coffee, chocolate
+  * homely, solid, balanced
 * Color and Meaning: Black and White
+  * night and day
+  * final simple truth
+  * pure, simple, innocent
+  * strong, sober, heavy, sophisticated
 * Cultural Color Differences
+  * red means death in Mexico, good luck in China, nature in Netherlands
 * Demo: Color Schemes
+  * monochromatic scheme uses 5 shades of the same color. balanced
+  * analogous scheme uses colours that are close together
+  * complementary provides maximum contrast (opposites on the color wheel)
+  * Triadic gives 3 equally spaced colors, not maximum but contrasting
 * Taking Inspiration from the Real World
+  * photos of things around us that we like can give us color schemes
 
 ## The Fundamental Gestalt Principles = Understanding Perception
 ## Other Important Principles - Layout and Organization
