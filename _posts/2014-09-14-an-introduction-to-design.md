@@ -186,4 +186,50 @@ Understanding human perception. Take advantage of the common principles that gui
   *  
 
 ## Other Important Principles - Layout and Organization
+
+* The Rule of Thirds
+  * Interest and balance
+  * divide the available space into 3rds, horizontally and vertically
+  * place the most important elements at the intersection of 2 3rds
+  * place content into vertrical thirds
+* The Golden Ratio
+  * divine proportion
+  * 1.618
+  * found in nature
+  * we tend to like things that obey this ratio
+  * golden rectangle applied over and over can give nice layouts
+* White Space
+  * negative space, area between elements
+  * valuable in and of itself, not just "left over"
+  * can be coloured or textured
+  * spacing to feel readable
+  * lots of whitespace can create feeling of elegance, luxury, class (Apple, Mazarati, Rolex)
+* Rebatment of the Rectangle
+  * every rectangle contains two imaginary squares
+  * place one starting at the left, one starting at the right and note where they end
+  * divides a rectangle into 3 spaces, not quite rule of thirds but close (can be the same)
+  * a thicker central element
+* The Gutenberg Rule
+  * direction and order people scan content
+  * left to right, top to bottom
+  * primary focus to terminal area
+  * strong fallow gets less focus
+  * weak fallow are gets even less
+  * important things should be on the line
+* Layout Grids
+  * order and balance by using a grid system
+  * can be a set unit or the ratio of the space we're working with
+  * span rows and columns freely as long as grid is respected
+* Desire Paths
+  * easiest and shortest path from where a person is to where they want to go
+  * disconnect between the design and human behaviour (shortcut -> worn grass)
+  * design is about solving problems, function and form
+* Hick's Law
+  * number of choices available and time taken to choose between them
+  * more choices -> response time increases
+* The Inverted Pyramid
+  * organising and presenting text based information
+  * start with most important in the lead (who, what, when, where, why)
+  * the body
+  * often used by journalists
 ## Next Steps
