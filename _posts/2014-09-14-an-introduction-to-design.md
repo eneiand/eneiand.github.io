@@ -142,5 +142,48 @@
   * photos of things around us that we like can give us color schemes
 
 ## The Fundamental Gestalt Principles = Understanding Perception
+Understanding human perception. Take advantage of the common principles that guide how we perceive the world around us.
+
+* The Principle of Proximity
+  * Things that are closer to each other seem related
+  * People sitting together at a table
+  * grouping things together make them seem related somehow
+  * even if they are not the same we still see them as related
+  * grouping on keyboards, calculator keys etc.
+* The Principle of Similarity
+  * Things that have similarities seem related
+  * squares and triangles, despite size
+  * triangles, size
+  * grouping by colour
+* The Principle of Figure-Ground
+  * Things stand out from the background
+  * we focus on the figures, background is ignored
+  * face vs. vase picture
+  * we don't pay attention to "ground" eg. white page vs "figure" -> letters
+* The Principle of Symmetry
+  * Two symmetrical halves appear as one
+  * We try to perceive things as shapes around a central point
+  * [] [] [], 3 pairs not 6 brackets
+* The Prcinciple of Closure
+  * Filling in the blanks
+  * process of drawing conclusions from the often incomplete information around us
+* The Principle of Common Fate
+  * Things that are moving in the same direction seem related
+  * things moving in different directions are perceived as different groups
+* The Principle of Uniform Connectedness
+  * visually connected things seem related
+  * connect things with lines to form groups
+  * draw a box around grouped things
+* The Principle of Good Continuation
+  * things on a line or curve seem related
+  * paragraph of text 
+  * all words on a line seem to be a group
+  * our eye follows lines/curves etc.
+* The Interplay of Principles
+  * how the principles work together creates the overall feel
+  * principles in competition can overpower each other
+* Spot the Principle
+  *  
+
 ## Other Important Principles - Layout and Organization
 ## Next Steps
