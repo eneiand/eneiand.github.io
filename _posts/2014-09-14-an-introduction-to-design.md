@@ -232,4 +232,17 @@ Understanding human perception. Take advantage of the common principles that gui
   * start with most important in the lead (who, what, when, where, why)
   * the body
   * often used by journalists
+
 ## Next Steps
+
+ * create a design notebook
+  * start to notice elements of design in everyday life
+  * strengthen awareness of these principles
+ * design bingo
+  * cross off items and principles as you notice them in real life
+ * resources
+  * [font squirrel](http://www.fontsquirrel.com)
+  * design matters podcast
+  * [AIGA](http://www.aiga.com)
+  * [design history timeline](http://designhistorytimeline.com)
+  * [Adobe Kuler](https://kuler.adobe.com)
