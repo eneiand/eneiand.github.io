@@ -1,8 +1,22 @@
 ### Programming Style & Your Brain
 
 * The Way We Think
+  * Some styles are profoundly better than others
+  * Gut and Head are two systems we use (Thinking Fast and Slow)
+    *  head takes a long time and takes a lot of effort
+    *  gut solves simple, close problems quickly
+    *  gut provides the working assumptions to the head
+    *  invalid inputs all the time
+    *  advertising targets and sells to the gut
 * The Programming Thought Process
+  * computer programs are the most complicated things that people make
+  * hard to do with our brains as in "The Way We Think"
+  * programming language still our best tool
+  * the need for perfection is one of the problems, all possible inputs
+  * we release software early to find imperfection
+  * programming uses head and gut, tradeoffs required
 * JavaScript: Good Parts and Bad Parts
+  * some of the best good parts and worst bad parts 
 * Understanding Good Programming
 * Avoiding Confusing Code (A)
 * Avoiding Confusing Code (B)
