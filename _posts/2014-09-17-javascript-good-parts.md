@@ -17,8 +17,24 @@
   * programming uses head and gut, tradeoffs required
 * JavaScript: Good Parts and Bad Parts
   * some of the best good parts and worst bad parts 
+  * JSLint checks you are using sane subset of the language
+  * always put curly braces on right (auto semi-colon insertion error otherwise)
+  * prefer forms that are error resistant
+  * switch statement, similar and inspired by goto statement (fallthrough hazard)
+    * error vs. elegance
+    * if I never intentionally fallthrough, I can find the places where I accidentally fallthrough
+  * we spend most of our time making mistakes and fixing them
 * Understanding Good Programming
+  * "That hardly ever happens" === "It happens"
+  * trying to be perfect? you can't allow it to ever happen
+  * a good style can help produce better programs, reduce your error rate
+  * style is not about personal preference and self-expresion
+  * programs must communicate clearly to people, not just get past the compiler
+  * never rely on  automatic semicolon insertion
+  * with statement is unpredictable, we are trying to avoid confusion
 * Avoiding Confusing Code (A)
+  * confusion must be avoided
+  * 
 * Avoiding Confusing Code (B)
 * Using JSLint
 
