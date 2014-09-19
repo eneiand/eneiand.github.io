@@ -63,6 +63,15 @@
 ### And Then There Was JavaScript
 
 * The History of Javascript
+  *  Netscape wanted a similar experience to HyperCard in the browser
+  *  Brendan Eich given 10 days to design it
+  *  influenced by Java, Scheme, Self -> LiveScript
+  *  change name to JavaScript to give it a relationship to Sun Java at the time
+  *  MS replicated Javascript and called it JScript
+  *  ECMA -> ECMAScript agreed to standardise the language
+  *  ES5 has default and strict
+  *  work in ES5/strict now
+  *  bad parts come from legacy, good intentions and haste
 * JavaScript Fundamentals
 * Numbers
 * Strings and Arrays
