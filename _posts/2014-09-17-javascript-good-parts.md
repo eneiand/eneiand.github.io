@@ -87,9 +87,35 @@
       * customize the new objects
       * taxonomy and classification are not necessary
         * difficult to do without perfect domain knowledge
-  * Delegation
+  * sometimes called Delegation
     * an object can say "anything I don't know what to do, ask that other object"
+  * also sometimes called Differential Inheritance
+  * new operator, creates an object that inherits from the functions prototype
+  * functions inherited from a prototype are included in the for in enumeration
+    * often have to check with 'hasOwnProperty'
+  * bad stuff
+    * keys must be strings
+    * anything you pass as a key will be coerced
 * Numbers
+  * One number type
+  * No Integer type, but ints are a subset of floating point
+  * 64-bit floating point
+  * IEEE-754 aka "Double"
+  * associative law does not hold (computers sometimes require approximation)
+    * (a + b) + c === a + (b + c)
+    * produces false for some values of a,b,c
+    * integers under 9 quadrillion are ok
+  * decimal fractions are approximate in IEEE-754
+  * you can add functionality to objects by adding methods to the prototype
+    * only really reasonable in library development
+  * numbers can have methods (it is an object)
+  * Seperate Math object for min, max, floor etc and constants
+  * NaN comes from IEEE too (a special number)
+    * the result of undefined or erroneous operations
+    * toxic
+    * NaN is not equal to anything, including NaN itself
+  * Infinity is another special number anything above Number.MAX_VALUE
+  * _but_ Number.MAX_VALUE + 1 does not equal Infinity 
 * Strings and Arrays
 * Objects
 * Common JavaScript Statements
