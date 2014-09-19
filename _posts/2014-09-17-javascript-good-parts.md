@@ -33,10 +33,32 @@
   * never rely on  automatic semicolon insertion
   * with statement is unpredictable, we are trying to avoid confusion
 * Avoiding Confusing Code (A)
-  * confusion must be avoided
-  * 
+  * confusion must be avoided, it is where bugs come from
+  * equality operator (==) does type coercion before comparison
+  * always use ===
+  * always use the more reliable feature
+  * avoid forms that are difficult to distinguish from common errors
+  * make your programs look like what they do
+  * javascript has function scope, not block scope
+    * declare all variables at the top of the function (makes it the same as hoisting)
+    * declare all functions before you call them
+  * i (induction variable) in a loop is not scoped to the loop, it is scoped to the function and should be moved to the top
+  * write in the language you are writing in
+  * the 'let' statement in the next version will replace var, no hoisting
 * Avoiding Confusing Code (B)
+  * global variables are evil, sometimes required because no other way to binding code units together
+  * use UPPER_CASE, should be rare and stand out
+  * Constructor functions should be named with InitialCaps
+  * implicit global variables, if you don't use var you get a global
+  * use x+=1 instead of x++
+  * always put in the curly braces every time
+  * as our processes become more agile, our processes must become more resilient
+  * bad stylists: under educated, old school, thrill seeker, exhibitionist
+  * time spent in the abyss (debugging) needs to be limited 
 * Using JSLint
+  * forms that can hide defects are considered defective
+  * language subsetting
+  * avoid premature optimization
 
 ### And Then There Was JavaScript
 
