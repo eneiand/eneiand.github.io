@@ -73,6 +73,22 @@
   *  work in ES5/strict now
   *  bad parts come from legacy, good intentions and haste
 * JavaScript Fundamentals
+  *  an object is a dynamic collection of properties
+  *  every property has a key string that is unique within that object
+  *  get, set, delete. dot or bracket notation
+  *  object literals
+    * an expressive notation for creating objects
+    * var my_object = {foo: bar};
+  * Classes v Prototypes
+    * can simulate Classes in a prototyped system, not the other way
+    * Working with Prototypes
+      * make an object that you like
+      * create new instances that inherit from that object (Object.create)
+      * customize the new objects
+      * taxonomy and classification are not necessary
+        * difficult to do without perfect domain knowledge
+  * Delegation
+    * an object can say "anything I don't know what to do, ask that other object"
 * Numbers
 * Strings and Arrays
 * Objects
