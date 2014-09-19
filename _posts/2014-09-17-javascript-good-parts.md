@@ -117,6 +117,25 @@
   * Infinity is another special number anything above Number.MAX_VALUE
   * _but_ Number.MAX_VALUE + 1 does not equal Infinity 
 * Strings and Arrays
+  * 2 boolean values 
+  * 0 or more 16 bit unicode characters
+  * UCS-2
+  * No charcter type
+  * Strings are immutable
+  * single or double quotes with \escapement
+  * use " for external strings (html templates, text to the user)
+  * use ' for internal strings and characters (names of properties)
+  * + can concat or add, hard to predict what it will do when typeless
+  * String(num) to convert number to String
+  * Number(str) or +str
+  * parseInt a little difficult to use, it thinks a leading 0 is octal, always put in 10 radix to make it explicit
+  * length property on Strings
+  * Array is a linear sequence of memory that can be indexed by number -> NOT what javascript has
+  * Array in javascript is an object, indexes are converted to strings and used as names for retrieving values
+  * no need to give it a length or type when creating an array
+  * special length property of Array is always 1 larger than the highest integer subscript
+  * don't use for in with arrays
+    *  doesn't guarantee the order you will visit the properties in
 * Objects
 * Common JavaScript Statements
 
