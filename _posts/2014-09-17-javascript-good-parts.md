@@ -136,6 +136,10 @@
   * special length property of Array is always 1 larger than the highest integer subscript
   * don't use for in with arrays
     *  doesn't guarantee the order you will visit the properties in
+  * append to arrays using myList[myList.length] = 'new string'
+  * map and forEach are very useful
+  * array sort function sorts numbers as strings, can pass own sort function
+  * delete leaves a hole (undefined), use splice instead
 * Objects
 * Common JavaScript Statements
 
