@@ -141,6 +141,29 @@
   * array sort function sorts numbers as strings, can pass own sort function
   * delete leaves a hole (undefined), use splice instead
 * Objects
+  * use objects when the names are arbitrary strings
+  * use arrays when the names are sequential integers
+  * Date function is based on Java's Date class
+  * RegExp for pattern matching, very difficult to get right
+  * All values are objects except null and undefined, undefined is "not even null" eg. a non-existing property
+    * don't store undefined in an object, can't tell the difference
+  * typeof
+    * object -> 'object'
+    * array -> 'object' _not helpful_
+    * null -> 'object' _just wrong_ typed pointers where 0 means 'object' and null
+    * Array.isArray
+  * Falsy values:
+    * false
+    * null
+    * undefined
+    * "" (empty string)
+    * 0
+    * NaN
+    * All other values (including all objects) are truthy
+      * "0" "false" 
+  * Loosely typed, any of these types can be stored in a variable or passed as a parameter. Not untyped.
+  * Reference, never copied, === asks are they the same object  
+
 * Common JavaScript Statements
 
 ### Function The Ultimate
