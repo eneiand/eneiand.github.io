@@ -210,6 +210,61 @@
 ### Function The Ultimate
 
 * Background on Functions
+  * just functions for everything -> method, class, constructor, modules
+  * function expression
+    *  'function' creates a function value (executable object)
+    *  optional name, used for recursion or stacktrace
+    *  parameters
+    *  body
+    *  function objects are first class
+      * passed as an argument to a function
+      * may be returned from a function
+      * may be assigned to a variable
+      * may be stored in an object or array
+    * function objects inherit from Function.prototype
+  * var statement
+    * decclares and initializes variables within a function
+  * function statement
+    * 'function' 
+    * mandatory name
+    *  same params and body
+    *  function foo() {}
+      * expands to var foo = function foo(){};
+      * further expands to var foo= undefined; foo = function foo() {};
+      * assignment of the function is also hoisted
+    * if the first token in a statement is function, then it is a function statement
+  * only functions have scope
+  * declare all varaibales at the top of the function
+  * declare all functions before you call them
+  * return statement
+    * no expression? then the return value is 'undefined'
+    * except for constructors, whose default return value is 'this'
+  * two pseudo parameters, arguments and this
+    * arguments contains all the arguments from the invocation
+    * array like (has a length) but not an array
+    * supports variable lengths of arguments
+    * _this_
+      * contains a reference to the object of invocation
+      * _this_ allows a method to know what object it is concerned with
+      * _this_ allows a single function object to service many objects
+    * invocation operator  ()
+      * function called with too many arguments? the extra arguments ignored
+      * missing arguments are set to undefined
+    * Invocation forms
+      * Method form (thisObject.methodName(arguments))
+        * _this_ is set to thisObject, the object containing the function 
+      * Function form (no specific object)
+        * _this_ is set to the global object, in future it will be bound to undefined
+        * an inner function does not get access to the outer this
+          * var that = _this_;
+          * every function gets its own _this_
+      * Constructor form (new FunctionValue(arguments))
+        * a new object ({}) is created and assigned to _this_
+        * if no explicit return value, then _this_ will be returned
+      * Apply form (functionObject.apply(thisObject, arguments))
+        *  _this_ is set explicitly
+      * _this_ is bound at invocation time
+
 * Functions as Subroutines
 * Protoypal Inheritance (A)
 * Prototypal Inheritance (B)
