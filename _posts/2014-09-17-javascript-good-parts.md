@@ -165,6 +165,38 @@
   * Reference, never copied, === asks are they the same object  
 
 * Common JavaScript Statements
+  * Identifiers
+    * start with letter or _ or $
+    * convention is that variables, paramters, memebers and function names start with lowercase
+    * except for constructor functions and global variables
+    * initial _ should be reserved for implementations
+    * $ should be reserved for machines
+  * Comments
+    * // slashslash line comment
+    * /* slashstar block comment */
+  * Operators
+    * usual, some act differently (+) 
+    * % is remainder, not modulo -> remainder takes sign from the first argument ( -1 % 8 // -1, not 7), modulo takes sign from last argument
+    * use === and !== no coercion
+    * && logical and or guard operator
+      * if first operand is truthy (result is not true or false, it is one of the operands which are truthy or falsy)
+        * then result is second operand
+        * else result is first operand
+      * can check for null references using 'return a && a.member', all objects are truthy so if not null, then returns a.member otherwise the falsy value of a
+    * || default operator, aka logical or
+      * if first operand is truthy
+        * then result is first operand
+        * else result is second operand
+      * can be used to fill in default values. var last = input || nr_items
+      * may not always work as expected if first operand is a number, because 0 is falsy.
+    * ! logical not operator
+      * if the operand is truthy, the result is false, otherwise the result is true
+      * !! produces booleans. so takes any value, convert to bool and ensure it matches original value
+        * truthy -> true, falsy -> false
+
+
+
+
 
 ### Function The Ultimate
 
