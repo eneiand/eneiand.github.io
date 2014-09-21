@@ -192,11 +192,20 @@
     * ! logical not operator
       * if the operand is truthy, the result is false, otherwise the result is true
       * !! produces booleans. so takes any value, convert to bool and ensure it matches original value
-        * truthy -> true, falsy -> false
-
-
-
-
+        * _converts_ truthy -> true _and_ falsy -> false
+    * Bitwise
+      * & | ^ >> >>> <<
+      * converts to a 32 bit int, does the shifting, converts back
+      * not faster, use the clearer thing
+    * Break statement
+      * statements can have labels, allowing break to that statement
+    * switch statement
+      * switch value does not need to be strings
+      * case values can be expressions
+      * case falls through without a break
+    * for in requires filtering to get it right
+    * throw anything, there is an Error constructor if you wish
+    * the catch in a try clause catches everything (loose typing)
 
 ### Function The Ultimate
 
