@@ -200,7 +200,7 @@
     * Break statement
       * statements can have labels, allowing break to that statement
     * switch statement
-      * switch value does not need to be strings
+      * switch value does not need to be a number
       * case values can be expressions
       * case falls through without a break
     * for in requires filtering to get it right
@@ -212,7 +212,7 @@
 * Background on Functions
   * just functions for everything -> method, class, constructor, modules
   * function expression
-    *  'function' creates a function value (executable object)
+    *  'function' creates a function value (executable object) which can then be invoked
     *  optional name, used for recursion or stacktrace
     *  parameters
     *  body
@@ -223,7 +223,7 @@
       * may be stored in an object or array
     * function objects inherit from Function.prototype
   * var statement
-    * decclares and initializes variables within a function
+    * declares and initializes variables within a function
   * function statement
     * 'function' 
     * mandatory name
@@ -234,15 +234,15 @@
       * assignment of the function is also hoisted
     * if the first token in a statement is function, then it is a function statement
   * only functions have scope
-  * declare all varaibales at the top of the function
+  * declare all variables at the top of the function
   * declare all functions before you call them
   * return statement
     * no expression? then the return value is 'undefined'
-    * except for constructors, whose default return value is 'this'
+    * except for constructors (called with new operator), whose default return value is 'this'
   * two pseudo parameters, arguments and this
     * arguments contains all the arguments from the invocation
-    * array like (has a length) but not an array
-    * supports variable lengths of arguments
+      * array like (has a length) but not an array
+      * supports variable lengths of arguments
     * _this_
       * contains a reference to the object of invocation
       * _this_ allows a method to know what object it is concerned with
@@ -258,6 +258,7 @@
         * an inner function does not get access to the outer this
           * var that = _this_;
           * every function gets its own _this_
+          * same rules as to _this_ binding applies to the inner function
       * Constructor form (new FunctionValue(arguments))
         * a new object ({}) is created and assigned to _this_
         * if no explicit return value, then _this_ will be returned
