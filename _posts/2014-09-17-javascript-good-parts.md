@@ -321,6 +321,20 @@
   }
   ```
 
+  A function that takes a function and an argument, and returns a function that can supply a second argument
+  ```
+  function curry(func, first) {
+    return function(second) {
+      return func(first, second);
+    };
+  }
+  
+  currying
+  
+  function curry(func, first) {
+    return applyf(func)(first);
+  }
+  ```
 
 ### Monads & Gonads
 
