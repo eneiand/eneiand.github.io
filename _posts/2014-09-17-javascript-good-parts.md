@@ -284,8 +284,30 @@
     * replaces global variables, and slow private variables with a single, private variable to the inner function
     * return a function immediately which continues to enjoy access to the variable
     * inner function doesn't have copies, it is still bound to the original values
+
 * Protoypal Inheritance (A)
+  * Prototypal but syntax tries to look classical so confused
+  * inheritance via the prototype object
+  
 * Prototypal Inheritance (B)
+  * treat the function as a module
+  ```
+    (function () {
+        var ...
+        function ...
+        function ...
+    }());
+  ```
+  * hide private state in the outer function that the returned object has access to
+  * Power Constructors
+    * make on object
+    * define some variables and functions (private members)
+    * augment the object with privileged methods (closes over private state)
+    * return object
+  * don't make functions in a loop
+    *  wasteful
+    *  confusing because the new function closes over the loop's variables, not over their current values. So you get their final values when executing later.
+    *  move the create step to a new function which will create the closure that is required each time
 
 ### Problems
 
