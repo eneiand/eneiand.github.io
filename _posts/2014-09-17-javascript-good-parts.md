@@ -335,7 +335,14 @@
     return applyf(func)(first);
   }
   ```
-
+ 3 ways to create an increment function
+  ```
+  inc = addf(1);
+  inc = applyf(add)(1);
+  inc = curry(add, 1);
+  ```
+  because each of those functions return a function that takes a single argument etc.
+  
 ### Monads & Gonads
 
 * Introduction to Monads
