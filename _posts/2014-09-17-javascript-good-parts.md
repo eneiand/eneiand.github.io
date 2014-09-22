@@ -310,6 +310,17 @@
     *  move the create step to a new function which will create the closure that is required each time
 
 ### Problems
+  A function that takes a binary function and allows it to be called with two invocations eg. add(3)(4)
+  ```
+  function applyf (binary) {
+    return function (x) {
+      return function (y) {
+        return binary(x, y);
+      };
+    };
+  }
+  ```
+
 
 ### Monads & Gonads
 
