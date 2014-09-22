@@ -267,6 +267,23 @@
       * _this_ is bound at invocation time
 
 * Functions as Subroutines
+  * subroutines?
+    * code reuse
+    * decomposition
+    * modularity
+    * expressiveness, designing your own language
+    * Higher Order, functions become parameters and return values
+  * Recursion
+    * function is defined in terms of itself
+    * Quicksort
+    * in recursion parameters replace variables
+  * Closure
+    * comes from set theory, a central idea in javascript 
+    * context of an inner function includes the scope of the outer function 
+    * the inner function enjoys that context even after the parent functions have returned
+    * replaces global variables, and slow private variables with a single, private variable to the inner function
+    * return a function immediately which continues to enjoy access to the variable
+    * inner function doesn't have copies, it is still bound to the original values
 * Protoypal Inheritance (A)
 * Prototypal Inheritance (B)
 
