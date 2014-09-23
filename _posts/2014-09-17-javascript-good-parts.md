@@ -365,7 +365,42 @@
   function composeu(funcA, funcB) { return function(x) { return  funcB(funcA(x)); } }
   function composeb(funcA, funcB) { return function(x, y, z) { return  funcB(funcA(x, y), z); } }
  ```
-  
+  functions that can be called only once
+  ```
+   function once (func) {
+    return function () {
+        var f = func;
+        func = null; // null out the func so that you get an exception when trying to execute it again
+        return f.apply(this, arguments);
+      };
+    }
+  ```
+  factory function that returns two functions that implement an up/down counter
+  ```
+    function counterf(x){  
+      return {
+        inc : function () {  
+          return x+=1;
+        },
+        dec : function () {
+          return x-=1;
+        }
+      };
+    }
+  ```
+  revocable function
+  ```
+  function revocable(func) {
+  return {
+    invoke: function () {
+      return func.apply(this, arguments);
+    },
+    revoke: function () {
+      func = null;
+    }
+  };
+}
+  ```
 ### Monads & Gonads
 
 * Introduction to Monads
