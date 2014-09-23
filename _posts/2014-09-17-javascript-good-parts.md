@@ -343,6 +343,21 @@
   ```
   because each of those functions return a function that takes a single argument etc.
   
+ Methodize function
+ ```
+  function methodize(func) {
+    return function(y) {
+      return func(this, y);
+    };
+  }
+ ```
+ Demethodize function
+ ```
+  function demethodize (func) { return function(x, y) { return func.call(x, y); } }
+  // use apply or call, apply expects an array like / arguments list
+ ```
+ 
+
 ### Monads & Gonads
 
 * Introduction to Monads
