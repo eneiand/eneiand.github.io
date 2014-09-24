@@ -14,6 +14,8 @@ javascript everywhere
 
 ### Program Flow
 
+* if statements
+* braces 
 
 ### Truth
 ### Functions
