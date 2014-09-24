@@ -404,8 +404,60 @@
 ### Monads & Gonads
 
 * Introduction to Monads
+  * comes from Haskell
+  * once you understand it, you lose the ability to explain it to people :)
+  * functional programming
+    * there is programming with functions
+      * FORTRAN  II (1958) 
+    * first class functions makes functional programming more interesting
+    * pure functional programming is more mathematical
+      * functions as maps, idempotent
+      * easier to reason about
+      * programming without side effects
+        * memoization vs. caching (caching is hard, memoization is easy in no side effect land)
+      * in the real world everything changes, immutability makes it hard to interact with the world
+    * Haskell needs something like mutation without mutating. That is Monads
+    * Monads are a loophole in the function contract (function always returns the same result)
+    * passing functions as a parameter can give a "state of newness"
+
 * The Identity Monad
+  *  you don't need to learn Haskell to understand Monads, learn JavaScript
+  ```
+  function MONAD() {
+  return function unit(value) {
+    var monad = Object.create(null);
+    monad.bind = function (func) {
+      return func(value);
+    };
+    return monad;
+  };
+}
+  ```
+  * returns the unit function, the unit function creates objects that contain the bind method
+  * the bind method takes the value that was passed to unit and passes it to the function passed to bind
+  * value is closed over by monad.bind
 * The Ajax Monad
+  * monads allowing the cascade?
+  * lift adds methods to the monad
 * The Maybe Monad
-* The Promise Monad (A)
+  * passing null to the maybe monad, it doesn't call
+  * if null ever gets into the system, we just let it go
+* concurrency
+    * threads are evil
+      * easy to get started, hard to reason about
+    * Turn based processing
+      * single threaded, race free, deadlock free
+      * The Law Of Turns
+        * never wait, never block, finish fast
+        * naieve way to handle dependent events is nested event handlers -> resolve with promises
+* The Promise Monad (A) 
+  * excellent method for managing asynchonicity
+  * promise is an object that represents a possible future value
+  * every promise has a resolver that is used to ultimately assign a value to the  promise.
+  * a promise can have one of three states: 'kept', 'broken' or 'pending'
+  * promise.when(success, failure)
+  * filesystem should return a promise when attempting to read a file
+  * why failure instead of exception?
+    * exceptions modify the flow of control by unwinding the stack
+    * in turn based systems, the stack is empty at the end of every turn
 * The Promise Monad (B)
