@@ -32,3 +32,27 @@
   * api.jquery.com
   
 #### Using jQuery Selectors
+
+* What are selectors?
+  * allow page elements to be selected
+  * selector identified an HTML element/tag that you will manipulate with jQuery Code
+  * $(selectorExpression)
+* Selecting Nodes by Tag Name
+  * $('p') selects all <p> elements
+  * $('p, a, span') selects all paragraphs, anchors and span elements
+  * $('table tr') selects all tr elements that are descendants of the table element
+  * affect all the objects that are returned:
+    * $('p').css('background-color', 'green');
+    * $('div').each(function(){ //this is each div })
+* Selecting Nodes by ID
+  * use the # character to select elements by ID
+  * $('#myID')
+* Selecting Nodes by Class Name
+* Selecting Nodes by Attribute
+* Selecting Input Nodes
+* Additional Selector Features
+
+
+
+
+
