@@ -69,6 +69,27 @@
   * [attribute*="value"] attributes where text contains
 * codylindley.com/jqueryselectors
 
+#### Interacting with the DOM
 
+* iterating through nodes
+  *  .each(function(index, element)) is used to iterate through jQuery objects
+  *  this represents the raw object, wrap it in $(this) to get a jQuery object (access to helper methods etc.)
+  *  element === this
+* modifying properties and attributes
+  * this.propertyName (inside the each), this being the raw DOM object, can be used to modify an object's properties directly 
+  * object attributes can be accessed using attr()
+    * $('img').attr('title', 'My Image Title');
+    * iterates without needing to do each
+    * modify multiple attributes by passing a JSON object
+* adding and removing nodes
+  * append(), appendTo(), prepend(), prependTo(), remove()
+  * appending adds children at the end of the matching element
+    * $('.officePhone').append('<span>(office)</span>');
+  * prepending adds children at the beginning of the matching element
+  * .wrap() 
+    * $('.state').wrap('<div class="US_State"/>');
+    * wraps anything with class 'state' in a div with class 'US_State'
+* modifying styles
+* modifying classes
 
 
