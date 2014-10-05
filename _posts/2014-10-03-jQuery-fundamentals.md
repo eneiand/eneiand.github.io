@@ -48,9 +48,25 @@
   * use the # character to select elements by ID
   * $('#myID')
 * Selecting Nodes by Class Name
+  * use the '.' character to selecte elements with a particular class
+  * be careful because it will scan the whole DOM
+  * would have to loop if using native javascript
+  * $('.BlueDiv, .ThisDiv') to select anything with class of BlueDiv or ThisDiv
+  * $('a.myClass') to select just <a> tags with class="myClass"
 * Selecting Nodes by Attribute
+  * use brackets [attribute] to select based on attribute name and/or attribute value
+  * when you see square brackets think "where"
+  * $('a[title]') selects all <a> tags WHERE there is a title attribute
+  * $('a[title="ProgrammingInfo"]') select all <a> tags WHERE the title attribute = "ProgrammingInfo"
 * Selecting Input Nodes
+  * $(':input') selects all elements used for input including: input, select, textarea, button, image, radio and more
+  * $('input') selects only the input tags
 * Additional Selector Features
+  * :contains() will select elements that contain the text $('div:contains("pluralsight")')
+  * $('tr:odd') and $('tr:even') is the syntax for selecting odd or even rows respectively
+  * $('element:first-child') selects the first child of every element group. also last or specific child
+  * [attribue^="value"] selects where attribute begins with or [attribute$="value"] for ends with
+  * [attribute*="value"] attributes where text contains
 
 
 
