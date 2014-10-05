@@ -67,7 +67,7 @@
   * $('element:first-child') selects the first child of every element group. also last or specific child
   * [attribue^="value"] selects where attribute begins with or [attribute$="value"] for ends with
   * [attribute*="value"] attributes where text contains
-
+* codylindley.com/jqueryselectors
 
 
 
