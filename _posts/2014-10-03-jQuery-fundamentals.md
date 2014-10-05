@@ -90,6 +90,11 @@
     * $('.state').wrap('<div class="US_State"/>');
     * wraps anything with class 'state' in a div with class 'US_State'
 * modifying styles
+  *  .css() function used to modify an object's style
+  *  accepts JSON
 * modifying classes
-
-
+  * addClass(), hasClass(), removeClass(), toggleClass()
+  * best practice compared to .css
+  * $('p').addClass('newClass')
+  * if($('p').hasClass('newClass)){
+  * remove specific or all classes with removeClass
