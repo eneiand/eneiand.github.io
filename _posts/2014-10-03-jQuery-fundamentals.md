@@ -98,3 +98,32 @@
   * $('p').addClass('newClass')
   * if($('p').hasClass('newClass)){
   * remove specific or all classes with removeClass
+
+#### Handling Events
+* jQuery Event Model Benefits
+  * event attach techniques are different between "Most Browsers" and pre IE9
+  * events notify a program that a user performed some types of actions
+  * jQuery provides cross browser, compact way to do this
+* Handling Events
+  * jQuery event shortcut functions. click(), blur(),  focus(), dblclick(), change() etc.
+  * mouseenter(), mouseleave()
+  * api.jquery.com/category/events
+  * grab the dom object, use the shortcut function to attach a callback to it
+  * $('#myID').click(function(){//do something});
+  * $('#myID').click() //fires the click on the div
+  * often hook up events when the document has fired the ready event
+  * event object is passed to the callback
+    * e.pageX, e.pageY, e.target (raw DOM)
+    * this is the raw object too
+* Binding to Events
+  * what is the on() function?, the core event function, event shortcuts delegate to it, used to be called bind
+  * .on('click', function(){});
+  * attaches a handler to an event for the selected elements
+  * unbind events using off();
+  * use a space to bind to multiple events ('mouseenter mouseleave')
+* live(), delegate() and on()
+  * handle adding lots of event handlers more efficiently
+  * uses bubbling to allow parents to handle the child event (table with lots of trs)
+  * delegate lets oyu specify the context (parent) to hanlde hte event
+  * on is the latest way to do this, add the child type param
+* Handling Hover Events
