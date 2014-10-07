@@ -126,4 +126,9 @@
   * uses bubbling to allow parents to handle the child event (table with lots of trs)
   * delegate lets oyu specify the context (parent) to hanlde hte event
   * on is the latest way to do this, add the child type param
+    *   $('#customers tbody').on('click', 'tr', function(){});
+    *   new children still receive the handling
 * Handling Hover Events
+  * pass two event handlers to the hover shortcut
+  * equivalent to on mouseenter and on mouseleave
+  * or pass just one function that gets fired on both
