@@ -46,6 +46,16 @@
   * add an object to the top level object which contains some defaults. eg. 'drawOptions'
 
 #### Event Handling
+* Shorthand Methods
+  * for common events shorthand methods can be used 
+  * click, hover, dblclick
+  * attach handlers when document ready
+* Message Functions
+  * making use of call lets us explicitly set 'this' 
+* More Elements
+* Propagation
+* No Shorthand
+
 
 #### Advanced Event Handling
 
