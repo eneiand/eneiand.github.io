@@ -132,3 +132,43 @@
   * pass two event handlers to the hover shortcut
   * equivalent to on mouseenter and on mouseleave
   * or pass just one function that gets fired on both
+
+#### Working with Ajax Features
+* jQuery Ajax Functions
+  *  Ajax reqeusts:
+    * allow parts of a page to be updated
+    * GET and POST supported
+    * Load JSON, XML, HTML or even scripts
+    * Simple API and cross browser support
+  * load() loads HTML data from the server
+  * get() and post() get raw data from the server
+  * getJSON(): Get/Post and return JSON
+  * ajax(): provides core functionality
+* Loading HTML Content from the Server
+  * the load() function
+  * $(selector).load(url, data, callback) allows HTML content to be loaded from a server and added into a DOM object
+  * $('#MyDiv').load('HelpDetails.html #MainTOC'); can combine html and selectors to filter what html gets appended to the div
+  * pass parameters to the server using the data JSON
+  * callback has the signature function(reponse, status, xhr)
+* Making GET Requests
+  * $.get(url, data, callback, datatype) can retrieve data from a server 
+  * the callback is function(data){}
+  * the data param is stuff you want to send to the server
+  * jQuery source code viewer james.padolsey.com/jquery
+  * http://james.padolsey.com/jquery/#v=1.10.2&fn=jQuery.get
+  * $.getJSON(url, data, callback) 
+    * hardcodes the datatype to 'json'
+    * the data that comes back in the callback is json 
+* Making POST Requests
+  *  $.post(url, data, callback, datatype) can post data to a server and retrieve results
+* Introduction to the ajax() Function
+  *  provides extra control over making Ajax calls to a server
+  * configure using JSON properties:  
+    * contentType
+    * data
+    * dataType
+    * error (callback)
+    * success (callback)
+    * type (GET or POST)
+  * pass a JSON object {} to $.ajax( settings );
+  * JSONP is available
