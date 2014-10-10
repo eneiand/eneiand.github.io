@@ -54,8 +54,16 @@
   * making use of call lets us explicitly set 'this' 
 * More Elements
 * Propagation
+  * any unhandled event is passed to its parent "bubble up"
+  * many ways to cancel event processing, return false for example, not all supported cross browser
+  * jQuery supports preventDefault()
+  * event.preventDefault() in event handler, doesn't cancel propogation, prevents the default behaviour only
+  * event.stopPropogation() should be called aswell as preventDefault to completely override and stop the event bubbling
 * No Shorthand
-
+  * live attaches event handlers to future elements, not just static ones. works by attaching a handler to the top level dom object
+  * delegate works like live but you can specify the point of attachment, not just the top level
+  * on and off superscede these methods and are preferred
+  * one is only handled once
 
 #### Advanced Event Handling
 
