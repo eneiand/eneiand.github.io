@@ -66,5 +66,28 @@
   * one is only handled once
 
 #### Advanced Event Handling
+* Namespace
+  *  append namespace to the event name
+  *  'click.demo'
+  *  allows us to narrow and target specific events to remove, ie I can remove 'click.demo' and leave 'click.test'
+  *  useful for jQuery plugin or a library
+* Delegation
+  * bind event handlers higher in the DOM
+    * efficiency
+    * centralized processing
+    * use on() with the selector parameter to take advantage of dynamic event handling
+* Custom Events
+  * create new events for DOM elements
+  * initiate a custom event with .trigger()
+  * eg. triple click
+  * jQuery data object is associated with the element of the DOM eg. $(this).data
+    * a good place to store persistent data eg. count of clicks
+  * $(this).trigger('click3');
+  * just use on and 'click3' as if it was build in
+* Event Parameters
+  * data passed to event handlers must be an object or an array
+  * pass the object as a parameter to the event handler
+  * add it to the trigger method $(notifyObject).trigger('recordsloaded', objectToPass)
+  * to pass to builtin events we must have access to the data, we can give it as a parameter to on() and it will be passed every time the event occurs
 
 #### Using jQuery Deferred Objects
