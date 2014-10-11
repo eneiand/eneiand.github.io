@@ -102,3 +102,4 @@ Deferreds are an alternate to callbacks
 * $.when().then()
   * when takes any number of deferreds seperated by commas 
 * use get instead of load because it returns a Deferred object
+* what to when there is a failure? attach additional function to the then to handle failure
