@@ -108,3 +108,5 @@ Deferreds are an alternate to callbacks
 * Deferred Methods
   * a wrapper for async methods that let you do things despite the order
   * promise returns a deferred object but we cannot change its status
+* Dynamic Pages
+  * create your own deferred object for long running dynamically loaded content 
