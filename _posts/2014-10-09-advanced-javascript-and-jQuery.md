@@ -91,3 +91,14 @@
   * to pass to builtin events we must have access to the data, we can give it as a parameter to on() and it will be passed every time the event occurs
 
 #### Using jQuery Deferred Objects
+Deferreds are an alternate to callbacks
+
+* Promise
+  * a promise states that the result of an asyn process will be reported at some time in the future
+  * Ajax functions return a Promise object
+* chaining callbacks is usual and problematic way to do several dependent things in a row, example is loading 3 sections of content before enabling a button
+* nesting calls to load content one at a time and then enable, 'christmas tree'
+* _when_ all content is loaded, _then_ enable the proceed button
+* $.when().then()
+  * when takes any number of deferreds seperated by commas 
+* use get instead of load because it returns a Deferred object
