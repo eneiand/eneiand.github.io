@@ -103,3 +103,8 @@ Deferreds are an alternate to callbacks
   * when takes any number of deferreds seperated by commas 
 * use get instead of load because it returns a Deferred object
 * what to when there is a failure? attach additional function to the then to handle failure
+  * or use .fail
+  * when then and fail execute almost immediately, setting up handlers for later
+* Deferred Methods
+  * a wrapper for async methods that let you do things despite the order
+  * promise returns a deferred object but we cannot change its status
