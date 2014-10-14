@@ -52,6 +52,37 @@
 
 #### Function Bugs
 
+* Raised Resource Bug
+  * function scope, variable hoisting
+  * hoisting raises the declaration of the variable to the top of the function
+  * it does not hoist the assignment, it is assigned to undefined until that point
+  * variables are available to the whole function 
+  * best practice therefore is to always declare variables at the top of the function to make it obvious what is happening
+* Early Execution Bug
+  *  function hoisting
+  *  function hoisting is different depending on expression vs. statement
+  *  a function expression hoist the declaration and leaves the assignment
+  *  function statements hoist both declaration and assignment
+* Morphed Method Bug
+  *  no method overloading in javascript
+  *  simulate it by defining one function and checking that arguments etc
+  *  checkign types again, use jQuery or Underscore because javascript returns 'object' for most things
+* Confounding Context Bug
+  *  value of _this_ is confusing
+  *  for inner function, assign _this_ to _that_ for the inner function
+  *  strict mode eliminates this coercion to the global object, it is null instead
+* Escaped Environment Bug
+  *  closing over the variable (i) refers to the last value of i
+  *  need to copy the value so can refer to it at that point of time later
+  *  or immedately invoke a function that creates another function, taking i as the value and storing it in a closure
+* Peculiar Parameter Bug
+  *  arguments object is not an array so it does not have a forEach
+  *  arguments is array like, it has a length and you can access it [], but it is not an array
+  *  you must iterate in a normal for loop or convert it to proper array
+* Condemned Criterion Bug
+  *  arguments.callee not available in strict mode
+  *  give function a name instead and refer to it that way
+
 #### Value, Variable, and Literal Bugs
 
 #### Object Bugs
