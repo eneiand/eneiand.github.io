@@ -66,6 +66,14 @@
   * one is only handled once
 
 #### Advanced Event Handling
+* Event handler methods
+  * using on('click dblclick mousedown') we can specify multiple event types to use one handler 
+  * sometimes we need to check that an event handler does not get added multiple times by using off()
+  * chain them together because off() returns the jquery object
+* Named Functions, named event handlers
+  *  easy to remove by name
+  *  can be centralized in a library
+  *  be careful of process order assumptions
 * Namespace
   *  append namespace to the event name
   *  'click.demo'
