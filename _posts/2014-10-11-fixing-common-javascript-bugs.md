@@ -84,5 +84,34 @@
   *  give function a name instead and refer to it that way
 
 #### Value, Variable, and Literal Bugs
-
+* Booked Byword Bug
+  * delete is a reserved keyword
+  * some other words set aside for the future
+* Revealing Recall Bug
+  *  missing var, javascript will make it global
+  *  easy to make this mistake when declaring and assigning like this
+````
+var index = length = 0
+//length is global, should use comma seperator
+var index = 0, length = 0;
+````
+  * use an object literal or IFFE to control namespaces
+* Relative Realism Bug
+  *  undefined is not a reserved word and could be redefined to be a truthy value
+  *  protect the value of undefined by wrapping it in an IFFE and adding _undefined_ to the parameter list
+  *  the undefined variable will then have the undefined value, whatever that may be
+* Tangled Tag Bug
+  *  HTML elements are available via their ids (named elements)
+  *  IE8 is weird with this
+  *  use a function wrapper to remove it from the global namespace
+* Double Define Bug
+  * defining the same key twice, the last key in an object literal or parameter in an function with the same name wins 
+* Transform Total Bug
+  * when parsing an int if the radix is undefined it is defaulted to 8 in ECMAScript 3 (IE8)
+  * so the parsing is done in Octal
+  * provide a radix always to avoid this bug
+* Amount Aware Bug
+  * NaN can not be compared to itself, always fales
+  * use isNaN(test) instead
+  
 #### Object Bugs
