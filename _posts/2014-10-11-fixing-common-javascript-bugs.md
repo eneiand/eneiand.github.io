@@ -115,3 +115,28 @@ var index = 0, length = 0;
   * use isNaN(test) instead
   
 #### Object Bugs
+*  Pregnable Property Bug
+  *  for-in loop iterates over enumerable properties, including those inherited from the object's prototype
+  *  for-in better for objects than arrays
+  *  can use hasOwnProperty to see if the object owns this property
+  *  or use a for loop to make sure with array
+*  Accidental Ancestry Bug
+  *  assigning to a method on a prototype overwrites existing methods
+  *  assign the an instance of the supertype's prototype to the subtypes prototype to break the connection
+* Eccentric Envelope Bug
+  *  using Boolean wrappers and === does not act as we expect because they are different objects
+  *  prefer not to use the Boolean wrappers
+  *  can use them to convert values to boolean, an alternative is !!
+* Translate Time Bug
+  *  moment.js knows how to conver Unix epoch
+  *  javascript does not
+* Perpetual Property Bug
+  *  no error if you try to change a readonly property, except in strict mode
+* Strange Set Bug
+  *  concating an array
+  *  one argument to the Array constructor means an array that size of undefined
+  * use array literal
+* Malformed Message Bug
+  * JSON keys must be double quoted, JSON Strings must be double quoted
+  * JSON is a string, not an object
+  * JSON.parse returns the parsed object
