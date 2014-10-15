@@ -22,10 +22,18 @@
     * need to be able to quantify, get actual numbers
     * user studies
 * Focus on the Critical Path
-  * 
+  * "premature optimizatoin is the root of all evil" -- Donald Knuth
+  * decide what is critical, the 3%
+  * Optimization, noncritical vs critical
+  * "noncritical path optimization is the root of all evil"
+  * 100ms no difference, 1000ms there was a delay but ok
+  * composed operations -> "Death by a thousand papercuts"
+  * inefficiency is systemic
 * The Total Cost of Ownership
-
-
+  * The myth of the refactor, broken refactor promise
+  * long term cost of ownership of non-performant code is greater
+  * we need performant by default
+  * most of "rfont-end" happens ni the middle ned
 #### The Middle-End: YSlow
 
 #### The Middle-End: Resources
