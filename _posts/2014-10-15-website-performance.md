@@ -87,9 +87,45 @@ The Big 14!
       * horizontally organised is more efficient than veritcally organised
       * avoid one giant image
     * <img src=""> fires a request!
-
+  * Exercise 1
+    * www.bbc.co.uk -> D, 64 
+    * www.skysports.com -> D, 65
+    * news.ycombinator.com -> A, 100
+    * www.red-gate.com -> D, 68
+      * Move javascript to the bottom
+      * combine the 21 js. 13 css and 17 images
+      * use a CDN
 
 #### The Middle-End: Resources
+* Images
+  *  average web page size is increasing
+    * js increasing faster
+  * image optimization 
+    * you can optimise most images without reducing quality 
+    * www.smushit.com/ysmush.it
+    * imageoptimizer.net
+    * pmt.sourceforge.net/pngcrush
+  * image spriting
+    * spriteme.org
+    * spritegen.website-performance.org
+    * www.floweringmind.com/sprite-creator
+  * inline images
+    * reduces requests
+    * ties caching to css
+      * dopiaza.org/tools/datauri
+      * dataurl.net/#dataurlmaker
+* Minification
+  *  compressorrater.thruhere.net -> compares various options for compression
+  *  marijnhaverbeke.nl/uglifyjs -> consistently better now
+  *  minifycss.com/css-compressor
+  *  jsbeautifier.org -> take minified and put in spacing
+  *  cssbeautify.org -> take minified and put in spacing
+  *  concatenation
+    *   zBugs.com -> a summary
+    *   robert nyman concatenating, minifying article
+      * http://robertnyman.com/2010/01/19/tools-for-concatenating-and-minifying-css-and-javascript-files-in-different-development-environments/  
+* Exercise 2
+
 
 #### The Middle-End: Architecture and Communication
 
