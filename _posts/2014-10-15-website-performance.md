@@ -127,6 +127,26 @@ The Big 14!
 * Exercise 2
 
 #### The Middle-End: Architecture and Communication
+* Understanding the Middle-end
+ * a layer between what happens purely in the front-end and purely in the back-end
+ * templating, ajax
+ * a buffer between the two ends
+* Introduction to Architecture
+  * SPA, excitement is that you can serve the markup once instead of 10 times
+  * javascript templating engine
+  * could decide where the line lies depending on the device
+* Data Validation
+  * often end up writing the same stateless validation code twice, js and back-end
+  * middle end using server side javascript lets us re-use the code
+  * like node.js (a good option)  but simpler is what Kyle suggests, Rhino is another
+* JSON, Ajax, & Web Sockets
+  * JSON still requires restraint, can't go stuffing tonnes of data into it
+  * Ajax vs. Web Sockets
+    * Ajax is a full request taking up extra resources, not heavy but heavier
+    * web sockets create one initial http cycle, then upgrades to web socket to get a persistent socket
+      * less overhead from this point forward. web socket packet is 8 bytes 
+      * 2 way communication
+      * not truly realtime, but a lot less latency
 
 #### The Front-End: Resource Loading
 
