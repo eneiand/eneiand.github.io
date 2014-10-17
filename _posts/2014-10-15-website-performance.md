@@ -120,12 +120,11 @@ The Big 14!
   *  minifycss.com/css-compressor
   *  jsbeautifier.org -> take minified and put in spacing
   *  cssbeautify.org -> take minified and put in spacing
-  *  concatenation
-    *   zBugs.com -> a summary
-    *   robert nyman concatenating, minifying article
-      * http://robertnyman.com/2010/01/19/tools-for-concatenating-and-minifying-css-and-javascript-files-in-different-development-environments/  
+*  Concatenation
+   *   zBugs.com -> a summary
+   *   robert nyman concatenating, minifying article
+     * http://robertnyman.com/2010/01/19/tools-for-concatenating-and-minifying-css-and-javascript-files-in-different-development-environments/  
 * Exercise 2
-
 
 #### The Middle-End: Architecture and Communication
 
