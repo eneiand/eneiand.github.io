@@ -158,6 +158,12 @@ The Big 14!
 * Lazy loading
   * opposite of preloading
   * don't download anything until you need it
-  * risk the 100ms 
+  * risk the 100ms, or even 1000ms barriers
+  * both are valid techniques that require understanding how your user feels about your site
+  * dynamically append a script element to the dom
 * Parallel Loading
+  * presserve execution order
+  * src.async is true by default, order is preserved in markup?
+  * labjs does dynamic loading -> assuming that no script does document.write
+  * avoid document.write, browsers have to assume it might be present and wait in case the dom might change
 ### The Front-End: Abstractions
