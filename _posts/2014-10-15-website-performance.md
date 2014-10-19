@@ -149,5 +149,8 @@ The Big 14!
       * not truly realtime, but a lot less latency
 
 #### The Front-End: Resource Loading
-
+* Preloading Images
+ *  
+* Lazy loading
+* Parallel Loading
 ### The Front-End: Abstractions
