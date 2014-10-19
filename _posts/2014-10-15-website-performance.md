@@ -150,7 +150,14 @@ The Big 14!
 
 #### The Front-End: Resource Loading
 * Preloading Images
- *  
+  * I know I'm going to need something later so give it to me now
+  * Effectively saying that this something is at least as important as what we're doing now
+  * <link rel="prefetch"> is a hint to the browser to load something
+  * need to send cache headers too
+  * DNS prefetching can be turned off
 * Lazy loading
+  * opposite of preloading
+  * don't download anything until you need it
+  * risk the 100ms 
 * Parallel Loading
 ### The Front-End: Abstractions
