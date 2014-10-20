@@ -167,7 +167,7 @@ The Big 14!
   * labjs does dynamic loading -> assuming that no script does document.write
   * avoid document.write, browsers have to assume it might be present and wait in case the dom might change
 
-### The Front-End: Abstractions & Animcation
+#### The Front-End: Abstractions & Animcation
 * OO is Slow(er)
  * OO js in the browser is different and slower than compiled languages
  * in general you tend to create too much abstraction
@@ -184,3 +184,35 @@ The Big 14!
 * CSS: Transition vs. Animation
   *  transition is starting value and ending value, change it and take this amount of time, you figure it out
   *  just updateElement once in js + css with transition: to set timing
+
+#### The Front-End: UI Thread, Garbage Collection & jsPerf
+* The Single Threaded Browser
+ * Async is not Parallel. JavaScript is async.
+ * Intel River _something_ has parallelism in some very specific circumstances
+ * requestAnimationFrame, don't take too long
+ * Frames UI in Chrome devtools can help figure out what's taking so long
+ * all subsystems share a single thread ie. UI Thread === CSS Engine === Garbage Collection, don't take too long
+* "Threaded" JavaScript
+  * web workers
+  * run a js file in a totally different thread
+  * communicate asynchronously via comms layer
+  * instantiate a Worker with a file, onmessage, postmessage
+  * communication can be memory intensive, it is string based and write-only so can have two copies
+  * browser doesn't gaurantee a new thread, strongly promises
+* Dynamic Memory Allocation
+  *  when you create a javascript object, a C++ object is created
+  *  when you stop referencing it in Javascript, you cannot ever reference that object again
+  *  The garbage collector comes along to clean it up
+  *  the more often that the browser thinks the garbage collector needs to run, the more you lose the thread
+    * need to avoid unnecessarily bringing the garbage collector into play
+  * Memory sub-tab, avoid create/release cycles
+* Introduction jsPerf
+  * test performance of js snippets http://jsperf.com 
+  * benchmark.js
+  * collects the information across browsers too
+* JavaScript Performance Mythbusters
+  * consider across the whole browser eco-system and a lot of runs
+  * differences when the numbers are already large (1m to 1.3m) are not important
+  * String Concat vs. Array.Join
+    * string concat is much faster
+  * http://lanyrd.com/2012/velocity/stpxc/
