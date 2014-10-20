@@ -166,4 +166,21 @@ The Big 14!
   * src.async is true by default, order is preserved in markup?
   * labjs does dynamic loading -> assuming that no script does document.write
   * avoid document.write, browsers have to assume it might be present and wait in case the dom might change
-### The Front-End: Abstractions
+
+### The Front-End: Abstractions & Animcation
+* OO is Slow(er)
+ * OO js in the browser is different and slower than compiled languages
+ * in general you tend to create too much abstraction
+ * deciding for the critical path (3%) consider not OO there
+ * Batch Operations
+  * often OO does not consider operations that you need to do in batch
+  * eg. reporting 
+ * dynamic language, live link, lots of function calls that cannot be optimised away like in a compiled language
+* Javascript Animations
+  * if you can, offload to CSS engine for performance
+  * setTimeout doesn't guarantee when it will fire
+  * requestAnimationFrame is HTML5 attempt to solve setTimeout, call this code before you paint next (60hz ~ 16.7 seconds)
+  * timeouts keep happening when tabs inactive but requestAnimationFrame does not because the browser knows this is animation related code
+* CSS: Transition vs. Animation
+  *  transition is starting value and ending value, change it and take this amount of time, you figure it out
+  *  just updateElement once in js + css with transition: to set timing
