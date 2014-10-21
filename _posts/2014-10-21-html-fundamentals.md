@@ -96,3 +96,10 @@
   * control width, border, cell padding (space around content inside cell), cell spacing (space between cells)
 
 #### HTML Images and Objects
+* Image and Object Concepts
+ * img tag and reference an image file
+  * be aware of file size, leave an alt-text
+ * objects for plug-ins, flash, applets, videos, silverlight etc
+ * optimise images for the web, don't post size
+ * the object tag, data attribute and type attribute tell the browser what this is
+  * the param element name and value attributes give the path to the source of the application
