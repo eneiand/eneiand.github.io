@@ -63,7 +63,36 @@
   * sublists by nesting a ul or ol inside an li
 
 #### HTML Links
-
+* Link Concepts
+  * anchors (a tags) act as either source or target for linking
+  * named anchors are targets
+  * anchors with href attributes are sources
+  * absolute provides the entire URI
+  * relative is relative to the current document -> base element to change what it is relative to
+* Understanding Targets
+  * links can target anchors, within the same document or in a separate document
+  * we use the # symbol to specify an anchor or the id of an element to link to
+* Additional link attributes
+  * language, relationship, content type, access key
+  * not often used because they are dependent on the thing you are linking to which can change
+   
 #### HTML Tables
+* Table Elements
+  * table, can have a summary attribute
+    * caption
+    * thead -> headers for columns, single row tr, th, th, tr
+    * tfoot -> summary etc., footer comes before tbody so they can render before reading all the data
+    * tbody -> multiple rows presenting data
+* Table Data
+  * tr represents a row
+    * used in header, body and footer
+    * th table header data insied tr inside thead
+    * td tabe data
+* Spanning Columns and Rows
+  * colspan/ rowspan 
+  * attributes used on td (cell) to flow across rows or columns
+* Formatting Tables
+  * not tables for formatting, use divs or block elements + stylesheets for that
+  * control width, border, cell padding (space around content inside cell), cell spacing (space between cells)
 
 #### HTML Images and Objects
