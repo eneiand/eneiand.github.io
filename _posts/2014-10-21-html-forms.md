@@ -17,6 +17,22 @@
 
 #### HTML form inputs
 
+* Text Inputs
+  * input with type="text", or type="password"
+  * textarea is a multi-line text box
+  * input with type="hidden" -> control values that get sent
+  * HTML5 : email, phone, url, date ,time ,datetime, month, week, local date time, number, range, color 
+* Selections
+  * select list (single or multi)
+  * radio buttons
+  * check boxes
+* Input Attributes
+  * size, maxLength, checked, multiple/selected, rows/cols, disabled/readonly (won't get sent)  
+* Input commands
+  *  input with type of reset 
+  *  input with type of submit -> sends form to the server
+  *  button, or button tag with type="submit"
+  *  image button
 
 #### Organizing HTML forms
 
