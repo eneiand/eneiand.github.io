@@ -55,6 +55,13 @@
 
 #### HTML Lists
 
+* List Types
+  * li = list item 
+  * unordered, ul + li -> bullets
+  * ordered, ol + li -> numeric or alpha labels
+  * definition list. dl, dt: definition term, dd: definition definition -> term + definition
+  * sublists by nesting a ul or ol inside an li
+
 #### HTML Links
 
 #### HTML Tables
