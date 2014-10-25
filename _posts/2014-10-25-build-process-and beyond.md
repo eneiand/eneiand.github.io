@@ -14,9 +14,22 @@
     * dependencies -> npm install will pull htese things down
     * dev-dependencies -> only required for development, odn't publish
     * npm install --save or --save-dev will wriet to the package.json
-  * grunt 
+ 
 * Grunt
+ * grunt 
+   * npm install -g grunt-cli
+   * command line + gruntfile.js
+    * defines all the pieces of the workflow that grunt is going to execute 
+    * coffee file also supported
+  * workflow
+    * all the bits of work we need to do
+    * minify + compress js
+    * minify + compress css
+    * optimise images
+    * html
+ 
 * Project Setup
+  
 * Starting Point
 
 #### Working with Grunt
