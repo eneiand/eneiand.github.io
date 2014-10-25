@@ -29,6 +29,7 @@
     * html
  
 * Project Setup
+  * some nice aliases like 'git hist'
   
 * Starting Point
 
