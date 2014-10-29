@@ -34,6 +34,15 @@
   * if stolen then easy to impersonate
   * needs SSL checking
 * Security Theater
+  * the feeling of security
+  * nobody stopping the client app spoofing the login
 * Attack Surface
-
+  * a big attack surface
+  * who is the client
+  * where to go to afterwards
+  * scope, response_type etc.
+  * lots of queries to manipulate and check for privileges
+  * requires a lot of validation on the server, for clients, only particular redirects etc.
+  * leastprivilege.com oauth2 problems and mitigations
+  
 #### Resources
