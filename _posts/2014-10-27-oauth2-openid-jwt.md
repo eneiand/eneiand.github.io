@@ -22,4 +22,18 @@
 
 #### OAuth2 Concerns
 
+* Eran Hammer
+  * hueniverse.com, lots of criticism of oauth
+* Specification Bloat
+  * too many alternative implementations to be a protocol
+  * now a framework "The OAuth 2.0 Authorization Framework"
+  * 6749, 6750, RFC 6819 -> Threat Model and Security Considerations
+* Bearer Tokens
+  * the token is not bound to the bearer
+  * SSL required to securely transfer
+  * if stolen then easy to impersonate
+  * needs SSL checking
+* Security Theater
+* Attack Surface
+
 #### Resources
