@@ -31,3 +31,38 @@
     * book: _Universal Principles of Design_ (Lidwell, Holden, Butler)
 
 #### Design principles for choosing options
+Looking at some objects in the real world to learn about design and applying those things to our designs. We need to understand why the objects are good or bad. Lets look at things with the "designers eye"
+
+* What's wrong with this elevator?
+  * observations: buttons and description seperate, increase left to right
+  * didn't notice there is no 13th floor
+  * alignment is a little bit off
+  * worn off paint shows people confuse the buttons with the description
+  * buttons are round in real life -> archetypes
+    * certain objects and actions have a universal or near-universal form or theme
+* The Gestalt principle of proximity
+  * things that are grouped spatially are associated together
+  * not grouping makes it difficult to figure out without greater context
+  * button should be close to placard, placard and buttons should be different shapes
+* Some important design principles for choosing options
+  * Fitt's law.
+    * the amount of time required to locate and use an option is smaller if the option is bigger
+  * on the elevator the most often visited places are larger and more prominent
+  * Pareto Principle (80/20) -> likely that 4 or 5 of the buttons are used for 80% of user actions
+  * Hick's law -> the time required to locate and use an option increases as the number of options increases.
+* Hick's Law and its consequences
+   * every time you add an option, it decreases the value of the other options
+   * can violate if you expect users to be highly trained and use the app a lot
+   * long lists and trees are commonplace, devs don't think about the usability
+   * most often they just add it to an existing list
+* Alternatives to ridiculously long lists of options
+  * remove all but the 20% most used features
+  * or shrink the less common ones
+  * standard area and an advanced area
+  * make the most prominent be bigger
+  * design principles don't tell you exactly what to do, just guides.
+* Users outnumber developers, plus summary and next steps
+  * users expect more from their software
+  * real world objects are good examples of good and bad design
+
+#### Visual Scanning and Processing
