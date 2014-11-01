@@ -88,6 +88,18 @@ human visual system is tuned to certain shapes etc.
     * visual system will fill in gaps automatically
     * spaces are filled in
   * Gestalt closure, continuity, and figure/ground
+    * a slider is perceived as a single line with the slider sat on top o it
     * fading text implies more text
-    * a path that dissapears
-    *
+    * a path that dissapears we expect to continue outside our vision
+    * figure/ground
+      * some part of what you see is supposed to be important
+      * your visual system tries to calculate out what the "figure" is vs what is the background
+      * visual system uses some queues to do this
+      * overlays, greying and shrinking can help focus user, switch what the figure is
+* Gestalt principles in remote controls, plus more on intentional blindness
+  * remote controls a good place for Gestalt
+  * need to match up what the user is focussing on and what the software is promoting, a mismatch causes intentional blindness
+* Gutenberg diagram, and summary
+  * eye tends to scan upper left to lower right with less attention to the upper right and lower left areas
+
+#### Preference for Naturalness
