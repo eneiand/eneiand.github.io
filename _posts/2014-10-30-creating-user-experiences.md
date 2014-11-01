@@ -96,10 +96,81 @@ human visual system is tuned to certain shapes etc.
       * your visual system tries to calculate out what the "figure" is vs what is the background
       * visual system uses some queues to do this
       * overlays, greying and shrinking can help focus user, switch what the figure is
-* Gestalt principles in remote controls, plus more on intentional blindness
+* Gestalt principles in remote controls, plus more on inatentional blindness
   * remote controls a good place for Gestalt
-  * need to match up what the user is focussing on and what the software is promoting, a mismatch causes intentional blindness
+  * need to match up what the user is focussing on and what the software is promoting, a mismatch causes inatentional blindness
 * Gutenberg diagram, and summary
   * eye tends to scan upper left to lower right with less attention to the upper right and lower left areas
 
 #### Preference for Naturalness
+When people see natural things they tend to feel less stressed.
+* Savannah preference and whitespace
+  * Biophilia -> preference for green growing things
+  * Savannah preference -> preference for openness, openness means safety and lack of threats
+  * layouts on a computer screen makes a user more comfortable and less stressed if that are more open and not too crowded.
+  * scrolling preferred to less whitespace
+  * first preference should be for more whitespace
+* Crowded screens and horror vacui
+  * whitespace reduces cognitive load
+  * prefer whitespace over boxes
+  * Horror vacui -> fear of empty spaces. Clutter implies low quality and cheap. Example being shop windows
+* No matter what you've heard, screen real estate isn't that valuable
+  * sometimes crowded interfaces required, but rarely
+  * user can only see a little bit of the screen clearly
+  * find capability, metrics to work out what's important
+  * users worried that we'll hide something they need
+  * multiple views for different roles, please everybody without overloaded UI
+* Infinite whitespace - demonstrating the viewport pattern
+  * zoom out, semantic zoom
+  * explore new navigation patterns
+* An exercise on crowded screens
+* Using color and gradients to promote naturalness
+  * natural world there is almost no monochrome
+  * gradients used to be more natural, simulate light
+  * in the natural world, light comes from overhead almost all the time. As a result, in gradients using the same color family, the lighter color should generally be on top
+  * faces lit from the bottom look creepy!
+  * can use the inverse for highlight, but top-down should be default
+  * kuler.adobe.com, www.colorschemer.com/schemes to get colours for gradient
+
+#### Preference for Naturalness, part 2
+humans prefer curved lines, edges infer sharp, danger etc.
+* Contour bias and desire lines
+  * curved paths
+  * desire lines: paths spontaneously created by users that take a natural route between objectives
+    * worthy goal to allow your users to construct their own desire lines through your software
+  * rounder corners, rounded buttons, despite rectangular basis
+* overuse of rectangular desing and how to avoid it
+  * too many devs stuck in dividing the screen into rectangles
+  * look to video games for some inspiration, use contour bias
+* using animation to promote naturalness
+  * now easy to do
+  * like gradients, should be used when natural
+  * we're not used to things "blinking" into existence, small animation can help
+  * fade in, fade out items, grow slowly from small to big
+* animation examples in StaffLynx
+  * screens slide in and out, the screen is not lost
+  * foreground animates, background shrinks
+  * animations lose value over time, reasonable to allow the user to turn them off
+* 3d appearance - reasons and techniques
+  * drop shadow, layering on top for grouping
+  * reflections
+  * perspective and texture gradients
+  * greying out
+
+#### Aesthetics and Legibility
+Aesthetics important but not when underinvesting in usability
+
+* Attractiveness bias
+  * pretty but confusing is not successful
+  * we are drawn to beautiful or attractive things, smooth colours, first impressions formed in less than five seconds
+  * pretty things get second chances, the benefit of the doubt
+* The Aesthetic-Usability Effect, advice on typefaces
+  * users believe that beautiful software is more usable
+  * don't sweat typefaces
+  * keep number of sizes used to 3 or 4
+  * proportionally spaced typefaces are preferred
+* Legibility and Contrast
+  * good contrast, not necessarily completely black. Maybe 90%
+  * right aligned for labels -> reduces boxiness
+* A bit more about fonts
+  * not too important for business apps, maybe more so for games or commercial sites where you want a certain mood
