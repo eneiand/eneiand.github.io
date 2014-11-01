@@ -66,3 +66,28 @@ Looking at some objects in the real world to learn about design and applying tho
   * real world objects are good examples of good and bad design
 
 #### Visual Scanning and Processing
+human visual system is tuned to certain shapes etc.
+  * tuned to detect edges
+  * start to make sense in 1/4 second
+    * shapes and groups
+  * experience used to interpret the output of stage 2
+  * we're mostly concerned with the second stage
+* The Gestalt principles of proximity and similarity
+  * do you see rows or columns? depends on spacing and proximity
+  * easy to mix up rows or columns of buttons
+  * objects that are similar are considered to be related and that overrides proximity
+    * color, shape or size (size does not work as well)
+* More grouping gestalt principles
+  * similarity to show relations
+  * grouping to show relations
+  * violating similarity can cause something to stand out (highlight)
+  * Common fate:
+    * involves movement
+    * items that move together are assumed to be connected
+  * continuity and closure:
+    * visual system will fill in gaps automatically
+    * spaces are filled in
+  * Gestalt closure, continuity, and figure/ground
+    * fading text implies more text
+    * a path that dissapears
+    *
