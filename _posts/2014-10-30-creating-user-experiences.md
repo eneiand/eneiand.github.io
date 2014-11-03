@@ -21,7 +21,7 @@
 * StaffLynx as an example
   * business apps have come a long way from terminal based to web based
 * Preparing for the new ecosystem
-  * principles are learnable and fundmental
+  * principles are learnable and fundamental
   * pattern matching
 * A test of awareness and observation
   * moonwalking bear!
@@ -96,7 +96,7 @@ human visual system is tuned to certain shapes etc.
       * your visual system tries to calculate out what the "figure" is vs what is the background
       * visual system uses some queues to do this
       * overlays, greying and shrinking can help focus user, switch what the figure is
-* Gestalt principles in remote controls, plus more on inatentional blindness
+* Gestalt principles in remote controls, plus more on inattentional blindness
   * remote controls a good place for Gestalt
   * need to match up what the user is focussing on and what the software is promoting, a mismatch causes inatentional blindness
 * Gutenberg diagram, and summary
@@ -138,8 +138,8 @@ humans prefer curved lines, edges infer sharp, danger etc.
   * curved paths
   * desire lines: paths spontaneously created by users that take a natural route between objectives
     * worthy goal to allow your users to construct their own desire lines through your software
-  * rounder corners, rounded buttons, despite rectangular basis
-* overuse of rectangular desing and how to avoid it
+  * rounded corners, rounded buttons, despite rectangular basis
+* overuse of rectangular design and how to avoid it
   * too many devs stuck in dividing the screen into rectangles
   * look to video games for some inspiration, use contour bias
 * using animation to promote naturalness
@@ -174,3 +174,36 @@ Aesthetics important but not when underinvesting in usability
   * right aligned for labels -> reduces boxiness
 * A bit more about fonts
   * not too important for business apps, maybe more so for games or commercial sites where you want a certain mood
+
+#### Managing Cognitive Load
+Reduce the amount of thought required for the user to get things done.
+People can only manage a limited amount of information at a time, we need to keep the information presented them to a minimum,
+just what they need at that moment
+* Recognition over recall and progressive disclosure
+  * users faster at recognizing the option they need instead of having to memorize option and inputs for each
+  * context menus and shortcut keys are advanced options for fast access
+  * progressive disclosure, control and manage the number of options the user needs to see at once
+    * reveal details in layers
+    * make sub menu items different, but similar to each other
+    * item, hover, then enter record
+* New UI for progressive disclosure, plus highlighting and the mapping principle
+  * New UI stacks enable tooltips, trees etc to contain whatever we want
+  * manipulating colours, highlighting by color, underline, size etc. fade for inactive etc.
+* Mapping continued, pls affordances
+  * mapping knobs on a stove to the burners
+  * corresponding the UI with the real world impact
+  * up button and down button are above and below each other, not next to each other
+  * affordances
+    * signals to the user about the right way to do things
+* Affordances continued, plus constraints
+  * scissors
+  * drag handles on UI
+  * entry points, "Click here to begin"
+  * constraint
+    * When an action is not appropriate, prevent the user from doing it, provide a visual signal that the action is not available
+    * getting the logic here correct is important, very frustrated to get stuck from continuing
+* Feedback, confirmation, and forgiveness
+  * feedback needs to be kept close to the thing it is referring to
+  * an irreversable action requires confirmation, asking too much reduces to value, reserve it
+  * forgiveness -> undo
+  * don't always need confirmation, accept and submit (holding area-> can be reclaimed within 30 seconds)
