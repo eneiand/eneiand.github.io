@@ -207,3 +207,56 @@ just what they need at that moment
   * an irreversable action requires confirmation, asking too much reduces to value, reserve it
   * forgiveness -> undo
   * don't always need confirmation, accept and submit (holding area-> can be reclaimed within 30 seconds)
+
+
+#### Meta-design Principles
+take context and circumstances into account
+design principles are guidelines, sometimes the context makes it ok to violate
+don't be dogmatic, there is no one true way
+the primary user should be considered, what is their priority?
+
+* Touch as an example context, and form follows function
+  * what are the common gestures?
+  * elements need to have a bigger minimum size
+  * can't use touch for long interactions
+  * form follows function
+    * a solution that matches the users needs tends to have an elegant feel
+    * it is emergent, a sign that you're going in the right direction
+* Form follows function, continued, and Ockham's Razor
+  * Ockham's Razor, prefer simplicity
+    * when considering two alternative explanations for something that are _both complete_, the simpler one is more likely to be correct
+    * in design, it means that when you have two possible designs that accomplish the same thing, you should usually choose the simpler one
+* Most Advanced Yet Acceptable
+  * new designs are a must, you might have a short shelflife otherwise
+  * if you get too advanced, users can become uncomfortable and wary
+  * push for distance (yet acceptable), minor re-design might not be enough to overcome inertia
+* Performance vs. Preference
+  * what is best for the business does not always match best for users
+  * users not always right
+    * users needs don't always match the needs of the business
+    * discomfort with change
+    * they've already learnt the existing system
+* Flexibility-usability tradeoff
+  * more flexible -> harder it is to make it usable
+  * don't base design on huge list of features
+  * new design should look for features that can be cut
+  * really good design makes some features obsolete
+  * every feature has a cost
+  * You'll never please everyone
+
+#### Summary and Resources for Further Study
+
+www.billyhollis.com/designprinciplelist
+design principles are long term and ingrained so worth investing in
+* Suggested actvities
+  * visit museums - both art and technology - to see new things look at their design
+  * carry a design sketch book
+* Books
+  * drawing on the right side of the brain
+  * universal principles of design
+  * designing with the mind in mind
+  * the design of everyday things
+  * out of our minds
+  * a whole new mind
+  * sketching user experiences
+  * about face ( Alan Cooper )
