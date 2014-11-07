@@ -121,8 +121,52 @@
   * color blindness (5-8% of males, <1% of females)
   * don't use color alone to convey information, use an icon too
 
-#### Hacking the USer's Mind
+#### Hacking the User's Mind
+
+* Getting Started
+  * more difficult
+* Leading Hack
+  * make user brain work less by leading them toward their goal
+  * labeled and numbered groups, option to turn off
+  * semi-transparent "onboard" overlay to show how to use it
+  * wizard, break a goal into steps, header with numbered steps
+  * cognitive friction high when path is unclear
+* Progressive Hack
+  * only show the user what they need, when they need it
+  * stops the user from getting overwhelmed
+  * focused, bitesize chunks
+  * list of options
+  * most frequent immediately available, the rest hidden
+* Status Hack
+  * keep the user calm by keeping them informed
+  * using the egg timer doesn't help
+  * show what's remaining, counting down is better when processing
+  * most things are possible to get a status, just harder for dev
+  * keep things moving
+* Recognition Hack
+  * Make it easy for our user's brain to recognize things vs. using their memory.
+  * value information over data
+  * help with things you can remind the user of
+  * avoid abstract codes
+  * recall is a high friction activity
 
 #### Testing our UX Hacks
+* Finding Users to Test
+  * internal users
+  * existing customers
+  * social media
+  * 5-10 people
+* Simple In-Person Tests
+  * visit users at their disk
+  * show them before and after
+  * avoid questions with yes or no answers, why x? can you tell me?
+  * avoid opinions, ask "how did you decide where to go next?"
+  * avoid leading questions
+  * avoid priming questions ( including words that relate to the UI next step), instead use "How would you proceed?"
+  * usabilityhub.com
+* Simple Online Tests
 
 #### The Path Forward
+  * 100 things every designer needs to know about people
+  * Designing with the Mind in Mind
+  * Don't make me think
