@@ -57,3 +57,52 @@
    * width/height -> important, faster perceived rendering (no reflow, the browser doesn't have to figure out layout more than once)
      * never scale (lose clarity or waste bandwidth)
    * url case sensitive for caching
+ 
+#### jQuery Plugins and CSS 3
+* jQuery Cycle Plugin
+  * rotate through various images with transitions  
+* jQuery Carousel Plugin
+  * a portion of a set of images with previous and next navigation
+  * can contain any html
+  * sometimes requires you to set the images to be invisible at first to avoid all appearing
+* jQuery Zoom Plugin
+  * see a zoomed in version of the portion under the mouse, like zooming in on an item of clothing
+  * provide two resolution images
+* jQuery Overlays Plugin
+  * overlay content, "more info" when hover over an image
+  * hover and a title appears
+* jQuery LazyLoad Plugin
+  * performance concerns, don't want to download all the images until needed
+  * uses data dash attributes from HTML5 to store the actual url of the img
+  * uses a small clear gif as the image initially
+* Disable Right Click
+  * turn off the right click menu so people can't download image
+  * disable the contextmenu event, return false from the handler
+* CSS 3
+  * series of modules
+  * some are considered part of CSS Core
+  * www.w3.org/Style/CSS
+* Browser/Vendor Prefixes
+  * CSS3 support is being provided by some prefixed properties until supported
+  * list the actual CSS3 property last for fallback
+* Fallbacks
+  * feature detection is preferable over what user-agent are you
+  * modernizr
+* Polyfills and Shims
+  * shim is a small lib that intercepts PI calls, can implement or pass on
+  * polyfill - a shim that implements new functionality in older browsers
+  * list -> http://tinyurl.com/3o67jqp
+* Rounded Corners
+  * used to be a massive pain, various jquery-ui plugins
+  * border-radius in CSS3 is builtin
+* Opacity
+  * how opaque or transparent an element is
+  * from 0 (full transparent) to 1 (fully opaque)
+* Multiple Backgrounds
+  * standard background properties with comma seperated values
+* Icon Fonts
+  * resolution independent, vector based
+  * fonts, so can color and use other CSS styles
+  * text chars from a font instead of images
+  * modernpictograms
+  * fontsquirrel.com
