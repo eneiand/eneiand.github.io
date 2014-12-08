@@ -40,17 +40,16 @@ administrator controls] (https://help.salesforce.com/apex/HTViewHelpDoc?id=custo
   * Describe the capabilities of [Salesforce Content] (https://help.salesforce.com/HTViewHelpDoc?id=content_about.htm&language=en_US) 
   * Describe how [folders](https://help.salesforce.com/HTViewHelpDoc?id=customize_folders.htm&language=en_US) can be used to organize and secure communication templates, dashboards, reports, and documents
 * **Reports and Dashboards**
-  * Describe the options available when creating or customizing a report
+  * Describe the options available when creating or customizing a [report] (https://help.salesforce.com/apex/HTViewHelpDoc?id=analytics_overview.htm&language=en_US)
   * Describe the impact of the sharing model on reports
-  * Describe the options available when creating and modifying dashboards
+  * Describe the options available when creating and modifying [dashboards] (https://help.salesforce.com/apex/HTViewHelpDoc?id=dashboards_def.htm&language=en_US)
   * Describe the capabilities of custom report types
 * **Workflow Automation**
-  * Describe when workflow rules are evaluated
-  * Describe the capabilities of workflow rules and actions
-  * Given a scenario, identify the appropriate workflow solution
-  * Describe capabilities and use cases for the approval process
+  * [Describe when workflow rules are evaluated] (https://help.salesforce.com/apex/HTViewHelpDoc?id=creating_workflow_rules_configure_settings.htm&language=en_US)
+  * [Describe the capabilities of workflow rules and actions] (https://help.salesforce.com/apex/HTViewHelpDoc?id=customize_wf.htm&language=en_US)
+  * Describe capabilities and use cases for the [approval process] (https://help.salesforce.com/apex/HTViewHelpDoc?id=what_are_approvals.htm&language=en_US)
 * **Desktop and Mobile Administration**
-  * Describe the capabilities of Salesforce1 and SalesforceA
-  * Describe the installation and synchronization options of Salesforce for Outlook
+  * Describe the capabilities of [Salesforce1 and SalesforceA] (https://help.salesforce.com/apex/HTViewHelpDoc?id=customize_sf1_wizard.htm&language=en_US)
+  * Describe the installation and synchronization options of [Salesforce for Outlook] (https://help.salesforce.com/apex/HTViewHelpDoc?id=outlookcrm_sfo_about.htm&language=en_US)
 * **AppExchange**
-  * Identify use cases for AppExchange applications   
+  * Identify use cases for [AppExchange](https://help.salesforce.com/apex/HTViewHelpDoc?id=package_distribute_apps_overview.htm&language=en_US) applications   
