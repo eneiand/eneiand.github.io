@@ -1,9 +1,7 @@
 ## Links to areas to study for the Salesforce Admin Certification
 
-[Name of Link]({% post_url 2014-06-02-effective-javascript %})
-
-* **Standard and Custom Objects 18%**
-  * [Describe the standard object architecture and relationship model] (http://www.salesforce.com/us/developer/docs/api/index_Left.htm#CSHID=relationships_among_objects.htm|StartTopic=Content%2Frelationships_among_objects.htm|SkinName=webhelp)
+* **Standard and Custom Objects 18%** [Notes]({% post_url 2014-12-10-standard-and-custom-objects %})
+  * [Describe the standard object architecture and relationship model] (https://help.salesforce.com/apex/HTViewHelpDoc?id=overview_of_custom_object_relationships.htm&language=en_US)
   * Explain how to create, delete, and [customize fields](https://help.salesforce.com/HTViewHelpDoc?id=customize_layoutcreate.htm&language=en_US), [page layouts](https://help.salesforce.com/apex/HTViewHelpDoc?id=customize_layoutcreate.htm&language=en_US), and [list views](https://help.salesforce.com/HTViewHelpDoc?id=customviews.htm&language=en_US) for custom and standard objects ()
  * Explain how to create, delete, and customize [record types](https://help.salesforce.com/HTViewHelpDoc?id=customize_recordtype.htm&language=en_US) for custom and standard objects
  * Explain the implications of [deleting fields](https://help.salesforce.com/HTViewHelpDoc?id=fields_managing_deleted_fields.htm&language=en_US)
