@@ -10,3 +10,9 @@
     * hierarchy of name servers, each knows about the layer of NS below it 
 * nslookup
   * a tool for performing dns lookup on the command line 
+  * change dns server with "server" command
+* DNS Caching 
+  * local machine and DNS servers cache ip records
+  * ipconfig /displaydns
+  * dns record changes take a while to get flushed through as a result
+* Hosts File
