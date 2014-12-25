@@ -21,3 +21,8 @@
   * contents appears in the cache
 * DNS Record Types
   *  A -> name to IP Address
+  *  set type in nslookup to query for other record types
+  *  NS -> nameservers for the domains, eg name servers for microsoft.com
+  *  MX -> mail exchanger, where to send mail to
+  *  CNAME -> alias (canonical name)
+  *  AAAA -> IPv6 A record
