@@ -16,3 +16,8 @@
   * ipconfig /displaydns
   * dns record changes take a while to get flushed through as a result
 * Hosts File
+  * override dns lookups
+  * system32/etc/hosts
+  * contents appears in the cache
+* DNS Record Types
+  *  A -> name to IP Address
