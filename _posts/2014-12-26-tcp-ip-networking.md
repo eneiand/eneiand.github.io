@@ -26,3 +26,38 @@
   *  MX -> mail exchanger, where to send mail to
   *  CNAME -> alias (canonical name)
   *  AAAA -> IPv6 A record
+* Wildcard Records
+	* a setup such that any subdomain will return the same IP address
+* IP Routing
+	* IP Routing Overview and Troubleshooting
+		* router connects different subnets
+		* tracert on a name or ip address -> what's the route + timings of each hop
+		* pathping -> performs tests on each link, lost packets for example
+		* subnet is a combination of IP + subnet mask
+			* 4 octets eg. 255.255.255.000
+			* where the subnet mask is on it represents a network, where it is off it represents a node on that network
+			* defines a range of valid ip addresses on the same subnet
+			* 255.255.255.000  = 192.168.12.0 - 192.168.12.255
+			* if a machine needs to access an ip within that range it can go directly, otherwise it needs to use the default route
+		* route table => how to find other subnets
+			* route command, 'route print' prints the route table
+			* default gateway comes from network configuration
+		* NAT -> Network Address Translation to convert public IP to private IP address
+* Port Connectivity
+	* TCP and UDP 
+		* TCP involves a session and confirms each data set, any missing data set is re transmitted
+		* UDP does not establish a session, just sends, great for situations where lost data doesn't matter (video conferencing)
+	* Testing Port Connectivity
+		* telnet (tcp) with a domain name and port number (pluralsight.com 80)
+		* no UDP session so difficult to figure out if a UDP port is open
+		* nmap will do port scanning
+		* netstat will show on this machine what ports are being used by what process
+	* Firewalls
+		* determines what connections/traffic/ports are allowed in
+		* can set rules by exe, port, tcp/udp etc.
+	* NAT and Private IP's
+		* public IP to private IP translation
+		* a service listening for traffic won't be routable, need to setup port forwarding (traffic for port x -> a particular IP)
+* Network Capture
+	* Wireshark -> any traffic
+	* Fiddler -> HTTP
