@@ -34,3 +34,6 @@
 #### Working Samples
   * Dockerfile contains description of how to build the docker image
   * 'sudo docker build -t adron/bearder-tribble .' build the image 
+  * 'sudo docker run -p 49169:8080 -d adron/bearded-tribble' run the image, publish 8080 port to 49169
+  * 'sudo docker logs' show output from a particular container id
+  * 
