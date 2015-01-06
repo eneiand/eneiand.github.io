@@ -13,3 +13,14 @@
   *  naming conventions allow returning a View from a controller Action hooks into a similarly named View
   *  ViewBag is a dynamically typed object, available in the razor view
   *  Can use a strongly type model to pass data to the view too
+  *  return the View with the model as a parameter
+  *  @model directive to inform the view about the model
+* Unit Testing
+  * .Tests project
+  * Testing the controller, MSTest framework comes in VS
+  * Arrange, Act (call an action on a controller directly), Assert
+* Javascript and CSS
+  * js in Scripts folder
+  * CSS in content folder
+  
+#### Controllers in ASP.NET MVC 4
