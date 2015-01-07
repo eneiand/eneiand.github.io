@@ -43,4 +43,5 @@
   *  pre and post processing logic
   *  Caching, authorization etc.
   *  [Authorize] on action or controller -> user must be logged in
-  *  global filters can be run on app startup
+  *  global filters can be run on app startup, eg what to do when an error occurs
+  *  extend ActionFilterAttribute to make a custom Action Filter
