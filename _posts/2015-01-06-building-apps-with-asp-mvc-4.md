@@ -24,3 +24,23 @@
   * CSS in content folder
   
 #### Controllers in ASP.NET MVC 4
+* Routes and Controllers
+  * routing engine uses the maproute to figure out where to send the http request
+  * Global.asax contains Application_Start which registers routes, called once
+  * RouteData.Values["controller"] extracts current value from the RouteData structure 
+* Actions and Parameters
+  * can alter the routes to do custom things
+  * the order that routes are added to the collection is important, first one wins
+  * MapRoute matches a route and tells MVC what controller and action to use
+  * adding a parameter to an action, the framework will look for something from the request that it should use
+  * Server.HTMLEncode to avoid CSS
+* ActionResult
+  * ContentResult, EmptyResult, FileContentResult/FilePathResult/FileStreamResult, HttpUnauthorizedResult, JavaScriptResult, JsonResult, RedirectResult, RedirectToRouteResut, ViewResult, PartialViewResult 
+* Action Selectors
+  *  ActionName -> alias the name of the method
+  *  AcceptVerbs -> only accessible via a particular HTTP message type [HttpPost] or [HttpGet]
+* Action Filters
+  *  pre and post processing logic
+  *  Caching, authorization etc.
+  *  [Authorize] on action or controller -> user must be logged in
+  *  global filters can be run on app startup
