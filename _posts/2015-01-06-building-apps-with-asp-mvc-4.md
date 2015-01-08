@@ -45,3 +45,23 @@
   *  [Authorize] on action or controller -> user must be logged in
   *  global filters can be run on app startup, eg what to do when an error occurs
   *  extend ActionFilterAttribute to make a custom Action Filter
+
+#### Razor Views
+* templates, cshtml
+* Razor Basics
+  * strongly typed views know what model or collection of model you are displaying 
+* Code Expressions
+  * @ sign -> C# code to evaluate and insert the output into the view
+  * ~ means the root of the application
+  * Razor automatically HTMLEncodes anything that comes from an @ expression
+  * use HTML.Raw to override the encoding behaviour
+  * Razor makes an effort to figure out C# vs markup, use explicit brackets where it gets confused
+* Code Blocks
+  * @{}, @foreach(){} 
+  * @: means the content following is literal
+* Layout Views
+  * UI structure
+  * RenderBody, RenderSection are called to plugin the custom body or section views
+  * _Layout.cshtml
+  * _ViewStart.cshtml defines what the layout view is, hierarchical and can be overriden in code
+  * @section can define a section that will appear somewhere on the layout page
