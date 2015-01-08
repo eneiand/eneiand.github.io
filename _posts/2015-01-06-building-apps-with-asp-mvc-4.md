@@ -78,3 +78,4 @@
   * @Html.Action() => call another controller from this one, place the ouput here, like a subrequest
     * BestReview on Reviews controller to appear on Layout
     * return a PartialView
+    * make it a child action only to disable direct url access
