@@ -65,3 +65,16 @@
   * _Layout.cshtml
   * _ViewStart.cshtml defines what the layout view is, hierarchical and can be overriden in code
   * @section can define a section that will appear somewhere on the layout page
+* HTML Helpers
+  * Create inputs, links, forms
+  * @Html.EditorFor
+  * @Html.ActionLink
+  * keep views simplie
+* Partial Views
+  * re-use a view 
+  * simplify views
+  * Shared folder makes it available everywhere
+  * @Html.Partial(nameOfView, modeltoRender)
+  * @Html.Action() => call another controller from this one, place the ouput here, like a subrequest
+    * BestReview on Reviews controller to appear on Layout
+    * return a PartialView
