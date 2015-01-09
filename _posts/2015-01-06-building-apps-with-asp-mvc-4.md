@@ -79,3 +79,31 @@
     * BestReview on Reviews controller to appear on Layout
     * return a PartialView
     * make it a child action only to disable direct url access
+
+#### Working with Data
+* The Entity Framework
+  * access a relational database with strongly-type LINQ queries
+  * Schema First => point to a db and it will import it
+  * Model First -> draw a model and generate
+  * Code First => write C# classes and EF will create a database
+  * Supports a lot of different databases
+* Building Entities 
+  * "database class" to derive from DbContext
+  * DbSet properties contain the entities we want to query
+  * instantiating the DbContext -> it will look for a db and create one if doesn't exist
+  * creates database in LocalDB
+* Database Migrations
+  * call into the base DbContext constructor to give it a connection string
+  * Web.config holds connection strings
+  * base("name=DefaultConnection") uses web.config connection string
+  * Migrations track and change the database as you code
+    * Seed -> populates the database with data on each update
+    * _migrationHistory is created in the database
+    * run Update-Database -Verbose at the package manager console
+* Using LINQ
+  * select comes at the end
+  * Comprehension Query Syntax -> starts with from, where, orderby, select
+  * Extension Method Syntax -> .Where.OrderBy.Skip -> extra options, no C# keywords
+  * ViewModel -> carrying information just for the View, eg aggregates
+* A Search Filter
+  * add a Where clause to the LINQ
