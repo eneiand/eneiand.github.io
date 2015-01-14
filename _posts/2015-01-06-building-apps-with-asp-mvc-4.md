@@ -128,3 +128,24 @@
   *  does a post to Create with a RestaurantReview
   *  check that the ModelState.IsValid before saving in the database (_db.SaveChanges())
   *  redirect to the index to see the review
+*  Editing a Review
+  *  EditView with the Edit scaffold
+  *  look up the model using the id
+  *  hidden input in the field for the id in the form
+  *  change the state of the review to modified in the edit post action
+* Mass Assignment (overposting)
+  * Watch out for auto binding of data
+  * the model binder will look for and assign as many values as it can
+  * Can use Bind to include or exclude the values 
+  * or define a viewmodel that only has the values you require
+* Validation Annotations
+  *  on the model attributes Range, Required, StringLength
+  *  putting these attributes on the model will require migrations to alter the database
+  *  editorFor will put the validation logic on the client as well as server (model binder enforces them)
+  *  also display annotations to describe what a field should be described as in the ui
+  *  System.ComponentModel.DataAnnotations
+* Custom Validations
+  * extend the ValidationAttribute eg. MaxWords
+  * implement IsValid, allows custom error message
+  * also can have model implement IValidatableObject and implement Validate for deep model inspection
+  * ValidationSummary shows errors when not associated with any particular field
