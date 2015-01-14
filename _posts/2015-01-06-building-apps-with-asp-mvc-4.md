@@ -166,3 +166,16 @@
   *  Ajax.BeginForm -> async request to the server and redraw an area of the screen
   *  InsertionMode eg replace, UpdateArea -> what div to replace?
   *  in the controller -> Request.IsAjaxRequest? and if it is then just return the partial, otherwise return the whole view
+* An Async Search
+  *  @Ajax.ActionLink
+  *  all uses unobtrusive javascript, data-ajax attributes attach events that degrade when no js available
+  *  js looks for the data dash attributes and attaches the appropriate handlers etc.
+* Autocompletion
+  * action on the controller that receives a term and returns JSON
+  * JSON returned should have a label property
+* Paging Results
+  * nuget package PagedList.MVC
+  * extension method to call .ToPagedList with a page number and number of results
+  * model becomes IPagedList<T>
+  * Web.Config in the Views folder has list of default namespaces
+  * @Html.PagedListPager to generate links, previous and next etc.
