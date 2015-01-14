@@ -149,3 +149,20 @@
   * implement IsValid, allows custom error message
   * also can have model implement IValidatableObject and implement Validate for deep model inspection
   * ValidationSummary shows errors when not associated with any particular field
+
+#### AJAX and ASP.NET MVC
+* The Scripts
+   * _references.js tells VS what files you commonly use to provide intellisense
+   * jquery intellisense js is just to help VS, never gets sent
+   * ASP.NET MVC 4 can auto-minify
+   * knockout and modernizer included
+* Managing Scripts
+    * Scripts.Render -> scripts tag referencing the library, some like modernizer require being added at the top
+    * Scripts and Syles.Render -> can minify and bundle the js
+    * Global.asax -> BundleConfig.RegisterBundles 
+      * create bundles, can use placeholders/wildcards etc. to be used in Scripts.Render or Stlyes.Render
+      * debug mode outputs all files, release has them bundled together and minified
+* AJAX Helpers
+  *  Ajax.BeginForm -> async request to the server and redraw an area of the screen
+  *  InsertionMode eg replace, UpdateArea -> what div to replace?
+  *  in the controller -> Request.IsAjaxRequest? and if it is then just return the partial, otherwise return the whole view
