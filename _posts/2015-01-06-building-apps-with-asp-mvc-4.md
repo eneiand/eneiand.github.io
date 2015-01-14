@@ -254,3 +254,33 @@
   * web.config in the .net folder
   * nuget elmah.mvc -> shows logs through the web interface
   * configure elmah to require authentication etc.
+
+#### Unit Testing
+* how to test without the database? 
+  * dependency injection -> default constructor for web app, DI constructor for test
+  * FakeControllerContext if you need to check something to do with the request
+  * change the modelstate with AddModelError for example
+  * 
+
+#### Deployment and Configuration
+* Configuration Files
+ *  XML files contorl environmental settings. Authentication, compilation etc.
+ *  custom settings can be added to the appSettings area
+ *  read them from ConfigurationManager.AppSettings
+* Configuration Hierarchy
+  * Machine config, machine web.config, parent's web.config, your web.config 
+  * lower level settings override higher level settings
+* Hosting ASP.NET MVC
+  * Building MVC projects produces a dll -> needs a host process
+  * IIS express for dev, full for production
+* Preparing for Deployment
+  * recreate the migrations, turn off auto migrations
+  * check for WebSecurity.Initialized
+* Deploying to IIS
+  * Web Deploy, FTP etc. 
+  * Web Deploy Package produces a zip file
+  * configure default connection when building the package, replaces it in web.config
+* A second deployment
+  * same as as above but simpler since everything already set up
+* Deploying to Windows Azure
+  *  
