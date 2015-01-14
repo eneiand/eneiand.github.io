@@ -215,3 +215,16 @@
   * Roles.Provider and Membership.Provider
   * create roles, check for users and membership 
   * User.IsInRole to check and determine if certain UI elements should be displayed
+* CSRF
+  * masquerade as a user by submitting the form from another site
+  * browser sends the logged in user's auth token
+  * make sure the form is the one you served, not a malicious one
+  * [ValidateAntiForgeryToken] attribute on the controller
+  * add verification token to the form -> a crypto value @HTML.AntiForgeryToken()
+* OpenID and OAuth
+  * dotnetopenauth project
+  * during app startup AuthConfig.RegisterAuth
+  * register your application with Facebook etc.
+  * Google doesn't require setup
+ 
+  
