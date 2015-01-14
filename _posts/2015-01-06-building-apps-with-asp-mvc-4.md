@@ -227,4 +227,30 @@
   * register your application with Facebook etc.
   * Google doesn't require setup
  
-  
+#### ASP.NET MVC 4 Infrastructure
+* Caching
+  * [OutputCache] -> action filter to determine when an action should be cached
+    * Duration (how long to cache the response), good for SQL queries
+    * Can also cache child actions
+* Cache Settings
+  * ASP.NET cache engine settings
+  * VaryByParam -> choose params to cache by eg. cache a response for page 1, page 2 etc.
+  * Location -> server, client, client and server
+  * VaryByHeader -> vary on an HTTP header
+  * VaryByCustom
+  * SqlDependency -> cache until data in a table changes
+* Cache Profiles
+  * stored in the web.config and can use that instead of hard coding across the board
+* Localization
+  * Thread.CurrentCulture property impacts formatting
+  * Thread.CurrentUICulture impacts resouce loading
+  * ASP.net can set cultures according to HTTP Headers
+  * add a globalization section in system.web with culture and ui culture set to auto
+* Resources
+  * resx files can store localized text and binary assets
+  * create a resource file for a language, dynamically change which one is used
+* Diagnostics
+  * log4net, elmah, healthMonitoring
+  * web.config in the .net folder
+  * nuget elmah.mvc -> shows logs through the web interface
+  * configure elmah to require authentication etc.
