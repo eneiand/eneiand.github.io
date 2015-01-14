@@ -107,3 +107,24 @@
   * ViewModel -> carrying information just for the View, eg aggregates
 * A Search Filter
   * add a Where clause to the LINQ
+
+#### Working With Data (Part II)
+
+* A Restaurant Controller
+  *  CRUD, need an area for restaurant
+  *  Choose template with read/write and select the model
+  *  views etc. are created in the scaffolding
+  *  Details action -> accepts an ID and tries to find it in the DB, checks for null and returns a 404 if s
+* Listing Reviews
+  *  watch out for htmlAttributes overload by accident
+  *  reviews index takes the id of the restaurant
+  *  use Bind to alias a parameter in the Action
+  *  use a partial view to extract the list
+  *  EF doesn't load up the child relationships automatically
+  *  add the virtual keyword to the collection property do it behind the scenes lazily (2 queries)
+* Create a Review
+  *  Create New -> Create action, restaurantID that this review is for
+  *  place BeginForm in a using statement to emit to end form tag automatically
+  *  does a post to Create with a RestaurantReview
+  *  check that the ModelState.IsValid before saving in the database (_db.SaveChanges())
+  *  redirect to the index to see the review
