@@ -179,3 +179,39 @@
   * model becomes IPagedList<T>
   * Web.Config in the Views folder has list of default namespaces
   * @Html.PagedListPager to generate links, previous and next etc.
+
+#### Security and ASP.NET MVC 4
+* Authentication
+  * What's the user's identity?
+  * Forms Auth -> website provides an input form to provide password, SSL, 
+  * OpenID/OAuth -> 3rd party authenticates, no credential management
+  * Windows Auth -> internal apps using windows domain/desktop details
+* Windows Authentication
+  * Intranet application
+  * enable windows auth on IIS
+  * tell IE to consider localhost to be an intranet site
+  * you get a User object
+* Forms Authentication
+  * anonymous user gets redirected to a login page
+  * once authenticated they are directed to the members only area
+  * AccountController, Views etc.
+  * WebSecurity from WebMatrix -> talks to SimpleMembershipProvider
+* Taking Control of Membership
+  * Filters folder -> InitializeSimpleMembership, InitializeDatabaseConnection defines where to put users
+  * delete the InitialSimpleMembership and put the InitializeDatabaseConnection in the Init instead
+  * take control of the User model to add custom fields etc.
+* Forms Authentication in Action
+  *  WebSecurity takes care of crypto etc.
+  *  webpages_ tables are used by WebSecurity
+  *  WebSecurity stores hash
+  *  attribute [RequireHttps] to enforce secure connection
+* Authorize
+  * [Authorize] attribute says that the user must be logged in to visit this URL
+  * decorate the Action or Controller 
+  * [AllowAnonymous] permits users despite the Authorize
+  * Specify particular users or roles that can access certain controllers
+* Seeding Membership
+  * Seed method of Configuration.cs
+  * Roles.Provider and Membership.Provider
+  * create roles, check for users and membership 
+  * User.IsInRole to check and determine if certain UI elements should be displayed
