@@ -283,4 +283,6 @@
 * A second deployment
   * same as as above but simpler since everything already set up
 * Deploying to Windows Azure
-  *  
+  *  Create with a new database
+  *  publish website via GIT, TFS or VS
+  *  download publish profile -> import to VS
