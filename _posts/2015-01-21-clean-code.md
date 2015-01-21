@@ -67,3 +67,58 @@
   * avoid hardcoding data into the code, easily changeable without recompilation
 
 #### Functions
+* When to Create a Function
+  * avoid duplication
+  * indentation -> 
+  * unclear intent -> function names to assist
+  * >1 task
+* Duplication
+  * fewer places to maintain, fix etc.
+  * look for patterns
+* Excessive indentation -> arrow code
+  * make it easier to read by removing so much indentation
+  * extract method -> move a chunk of code to a function
+  * reader can choose to read at whatever level of detail they wish
+* Return Early
+  * return as soon as the condition has been found, eg. is username valid?
+* Fail Fast
+  * guard clauses to assert that input is valid, throw exception immediately
+  * reduces indentation
+* Convey Intent
+  * clarify by using a function and function name instead of a comment
+* Do One Thing
+  *  aids the reader, promotes re-use, eases naming and testing, avoids side-effects
+* Mayfly Variables
+  * don't init variables at the top of the function
+  * variables only live a short time
+  * JIT variables
+* Parameters
+  * strive for 0 to 2 parameters
+  * easier to understand, test etc.
+  * helps assure function does one thing
+  * watch out for flag arguments eg. emailUser
+* What's Too Long?
+  * signs -> whitespace and comments
+    * scrolling required
+    * naming issues
+    * multiple conditionals
+    * hard to digest -> multiple layers of distraction
+    * remember the rule of 7, more than 7 of something is too difficult to process
+  * Bob Martin 
+    * functions rarely be over 20 lines
+    * hardly ever over 100 lines
+    * no more than 3 parameters
+  * linux style guide : simple functions can be longer, complex functions should be short
+* Exceptions
+  * unrecoverable
+    * null ref
+    * file not found
+    * access denied
+  * recoverable
+    * retry connection
+    * try different file
+    * wait and try again
+  * ignorable
+    * click logging
+  * catching an exception and continuing is fail slow, allow it to bubble up instead
+  * keep the try/catch body standalone to make it clear
