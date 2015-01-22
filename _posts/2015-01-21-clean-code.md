@@ -122,3 +122,41 @@
     * click logging
   * catching an exception and continuing is fail slow, allow it to bubble up instead
   * keep the try/catch body standalone to make it clear
+
+#### Classes
+SOLID principles and Design Patterns courses by Steve Smith
+
+* Classes are like headings in a book -> well named give a clue of the content
+* When to Create?
+  * new concept -> abstract or real-world
+  * found some low cohesion within an existing class? split it out
+  * promote re-use with small, targeted classes
+  * reduce complexity -> solve once and hide away
+  * clarify parameters -> convert a loose bag of variables into a class
+* Cohesion
+  * Class responsibilities should be strongly-related
+    * readability
+    * increases likelihood of reuse
+    * avoids attracting the lazy
+  * watch out for methods that don't interact with the rest of the class
+    * fields that are only used by one method
+    * classes that change often
+  * specific names lead to smalled more cohesive classes 
+* When is a class too small?
+  *  rare
+  *  classes that rely heavily on each other
+  *  one class relies on another completely
+  *  too many small moving parts?
+* Primitive Obsession
+  * passing around bags of data? maybe time to create a class
+  * trade off between too many params should be an object and fewer params being more specific about dependency
+* Principle of Proximity
+  * strive to make code read top to bottom when possible
+  * keep related actions together so convenient to read
+* The Outline Rule
+  * collapsed code should read like an outline
+  * multiple layers of abstraction, methods calling child methods etc.
+  * easy to review at the appropriate level of abstraction
+
+#### Comments
+*
