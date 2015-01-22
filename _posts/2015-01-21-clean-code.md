@@ -159,4 +159,21 @@ SOLID principles and Design Patterns courses by Steve Smith
   * easy to review at the appropriate level of abstraction
 
 #### Comments
-*
+* Necessity and Crutch
+ * prefer expressive code over comments
+ * use comments when code alone can't be sufficient
+* Redundant Comments -> repeating the code in comment like "set i = 1", not DRY
+* Intent => comments to clarify intent can be replaced with code eg. 2 changed to Status.Inactive
+* Apologies and Warnings -> don't apologize, fix or leave a TODO if you must. Warnings are stupid
+* Zombie Code -> commented out code should be removed, will be read and comes up in searches etc.
+  * signal to noise ratio -> ruined by Zombie code
+* Dividers and Brace Trackers
+  *  comments breaking up long functions? => refactor
+  *  comments describing closing braces? => refactor
+* Bloated Header => keep to a minimum
+* Defect Log -> change metadata, like commit comments, belong in source control
+* Clean Comments
+  * TODO or HACK supported by VS
+  * watch out for todos that are actually warnings and apologies
+  * some high level overview comments "summary comments" can be useful if an additional content is needed
+  * documentation "see url for api" can be useful if can't be expressed in code
